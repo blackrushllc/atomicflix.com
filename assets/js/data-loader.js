@@ -57,16 +57,32 @@ export function getChapterBySeriesAndNumber(seriesId, number) {
 
 export function getNextChapter(seriesId, currentNumber) {
     const series = getSeriesById(seriesId);
-    if (!series) return null;
-    const nextNum = parseInt(currentNumber, 10) + 1;
-    return series.chapters.find(c => c.number === nextNum && c.isPublished);
+    if (!series || !series.chapters) return null;
+    const currentIdx = series.chapters.findIndex(c => c.number === parseInt(currentNumber, 10));
+    if (currentIdx === -1) return null;
+    
+    // Find next published chapter
+    for (let i = currentIdx + 1; i < series.chapters.length; i++) {
+        if (series.chapters[i].isPublished) {
+            return series.chapters[i];
+        }
+    }
+    return null;
 }
 
 export function getPreviousChapter(seriesId, currentNumber) {
     const series = getSeriesById(seriesId);
-    if (!series) return null;
-    const prevNum = parseInt(currentNumber, 10) - 1;
-    return series.chapters.find(c => c.number === prevNum && c.isPublished);
+    if (!series || !series.chapters) return null;
+    const currentIdx = series.chapters.findIndex(c => c.number === parseInt(currentNumber, 10));
+    if (currentIdx === -1) return null;
+
+    // Find previous published chapter
+    for (let i = currentIdx - 1; i >= 0; i--) {
+        if (series.chapters[i].isPublished) {
+            return series.chapters[i];
+        }
+    }
+    return null;
 }
 
 export function getBlitzItems() {

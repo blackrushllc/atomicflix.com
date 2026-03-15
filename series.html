@@ -71,8 +71,26 @@
             document.getElementById('detail-genre').textContent = series.genre;
             document.getElementById('detail-description').textContent = series.longDescription || series.description;
             document.getElementById('detail-poster').src = series.poster;
-            document.getElementById('detail-poster').onerror = function() { this.src = `https://via.placeholder.com/300x450?text=${encodeURIComponent(series.title)}`; };
-            document.getElementById('detail-hero').style.backgroundImage = `url(${series.banner})`;
+            document.getElementById('detail-poster').onerror = function() {
+                console.error(`Media missing: ${series.poster}`);
+                const placeholder = document.createElement('div');
+                placeholder.className = 'media-placeholder';
+                placeholder.style.width = '300px';
+                placeholder.style.aspectRatio = '2/3';
+                placeholder.innerHTML = '<span>Missing Poster</span>';
+                this.replaceWith(placeholder);
+            };
+            
+            // Check banner background
+            const bannerImg = new Image();
+            bannerImg.onload = () => {
+                document.getElementById('detail-hero').style.backgroundImage = `url(${series.banner})`;
+            };
+            bannerImg.onerror = () => {
+                console.error(`Media missing: ${series.banner}`);
+                document.getElementById('detail-hero').classList.add('media-placeholder');
+            };
+            bannerImg.src = series.banner;
             
             const tagsContainer = document.getElementById('detail-tags');
             series.tags.forEach(tag => {
@@ -87,7 +105,9 @@
                 const row = document.createElement('div');
                 row.className = 'chapter-row';
                 row.innerHTML = `
-                    <img class="chapter-thumb" src="${chapter.thumbnail}" alt="${chapter.title}" onerror="this.src='https://via.placeholder.com/180x101?text=Chapter+${chapter.number}'">
+                    <div class="chapter-thumb-wrapper" style="width: 180px; flex-shrink:0;">
+                        <img class="chapter-thumb" src="${chapter.thumbnail}" alt="${chapter.title}" onerror="console.error('Media missing: ${chapter.thumbnail}'); this.replaceWith(createThumbPlaceholder())">
+                    </div>
                     <div class="chapter-details">
                         <h3>Chapter ${chapter.number}: ${chapter.title}</h3>
                         <p>${chapter.description}</p>
@@ -97,6 +117,16 @@
                 row.onclick = () => window.location.href = `watch.html?series=${series.id}&chapter=${chapter.number}`;
                 chaptersContainer.appendChild(row);
             });
+        }
+
+        function createThumbPlaceholder() {
+            const div = document.createElement('div');
+            div.className = 'media-placeholder';
+            div.style.width = '180px';
+            div.style.aspectRatio = '16/9';
+            div.style.fontSize = '0.7rem';
+            div.innerHTML = '<span>Missing Thumb</span>';
+            return div;
         }
 
         init();

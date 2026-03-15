@@ -33,7 +33,7 @@
         </section>
 
         <section class="content-row" id="featured-row">
-            <h2>Featured Tonight</h2>
+            <h2>Featured Stories</h2>
             <div class="cards-container" id="featured-container">
                 <!-- Featured items injected here -->
             </div>
@@ -56,7 +56,7 @@
 
     <footer>
         <div class="logo">AtomicFlix</div>
-        <p>&copy; 2026 AtomicFlix. All rights reserved. Classic Futures, Streamed.</p>
+        <p>&copy; 2026 Blackrush LLC. All rights reserved. Classic Futures, Streamed.</p>
         <div class="social-links" id="social-links">
             <!-- Social links injected here -->
         </div>
@@ -73,7 +73,18 @@
             const hero = getHero();
             document.getElementById('hero-title').textContent = hero.headline;
             document.getElementById('hero-subtitle').textContent = hero.subheadline;
-            document.getElementById('hero-section').style.backgroundImage = `url(${hero.backgroundImage})`;
+            
+            // Check hero background image
+            const heroImg = new Image();
+            heroImg.onload = () => {
+                document.getElementById('hero-section').style.backgroundImage = `url(${hero.backgroundImage})`;
+            };
+            heroImg.onerror = () => {
+                console.error(`Media missing: ${hero.backgroundImage}`);
+                document.getElementById('hero-section').classList.add('media-placeholder');
+            };
+            heroImg.src = hero.backgroundImage;
+
             document.getElementById('hero-primary-cta').href = `watch.html?series=${hero.featuredSeriesId}&chapter=1`;
             document.getElementById('hero-secondary-cta').href = `series.html?id=${hero.featuredSeriesId}`;
 
@@ -117,18 +128,47 @@
         function createCard(item, type, label) {
             const card = document.createElement('div');
             card.className = 'card';
-            const img = item.poster || item.thumbnail;
+            const imgPath = item.poster || item.thumbnail;
             const targetUrl = type === 'series' ? `series.html?id=${item.id}` : `watch.html?blitz=${item.id}`;
+            const isComingSoon = type === 'series' && item.status === 'coming soon';
+            
+            if (isComingSoon) {
+                card.classList.add('disabled');
+            }
+            
+            let statusHtml = '';
+            if (type === 'series' && item.status) {
+                let statusText = item.status;
+                if (item.status === 'ongoing' || item.status === 'complete') {
+                    const count = item.chapterCount || (item.chapters ? item.chapters.length : 0);
+                    statusText += ` — ${count} episode${count !== 1 ? 's' : ''}`;
+                }
+                statusHtml = `<div class="card-status">${statusText}</div>`;
+            } else if (type === 'blitz') {
+                statusHtml = `<div class="card-status">Watch Now</div>`;
+            }
             
             card.innerHTML = `
-                <img src="${img}" alt="${item.title}" onerror="this.src='https://via.placeholder.com/300x450?text=${encodeURIComponent(item.title)}'">
+                <img src="${imgPath}" alt="${item.title}" onerror="console.error('Media missing: ${imgPath}'); this.replaceWith(createMediaPlaceholder('${item.title}'))">
                 <div class="card-info">
                     <div class="card-meta">${label || item.author || item.creator || ''}</div>
                     <div class="card-title">${item.title}</div>
+                    ${statusHtml}
                 </div>
             `;
-            card.onclick = () => window.location.href = targetUrl;
+            
+            if (!isComingSoon) {
+                card.onclick = () => window.location.href = targetUrl;
+            }
             return card;
+        }
+
+        function createMediaPlaceholder(text) {
+            const div = document.createElement('div');
+            div.className = 'media-placeholder';
+            div.style.aspectRatio = '2/3';
+            div.innerHTML = `<span>Missing Media</span><br><small style="text-transform:none; font-weight:normal; opacity:0.7;">${text}</small>`;
+            return div;
         }
 
         window.addEventListener('scroll', () => {

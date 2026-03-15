@@ -18,44 +18,58 @@
     </header>
 
     <main class="watch-container" id="watch-main">
-        <div class="video-wrapper">
+        <div class="video-wrapper" id="video-area">
             <video id="player" controls autoplay poster="">
                 <source id="video-source" src="" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
             
             <div id="auto-next-overlay" class="overlay" style="display: none;">
-                <p>Up Next</p>
-                <h2 id="next-title">Next Chapter Title</h2>
-                <div class="countdown" id="countdown-timer">10</div>
-                <div>
-                    <button id="play-next-btn" class="btn btn-primary">Play Next Now</button>
-                    <button id="cancel-next-btn" class="btn btn-secondary">Cancel</button>
+                <div class="overlay-content">
+                    <p>Up Next</p>
+                    <h2 id="next-title">Next Chapter Title</h2>
+                    <div class="next-preview" id="next-preview-container">
+                        <!-- Thumbnail injected here -->
+                    </div>
+                    <div class="countdown" id="countdown-timer">10</div>
+                    <div class="overlay-actions">
+                        <button id="play-next-btn" class="btn btn-primary">Play Next Now</button>
+                        <button id="cancel-next-btn" class="btn btn-secondary" style="margin-left:0">Cancel</button>
+                    </div>
                 </div>
             </div>
 
             <div id="series-end-overlay" class="overlay" style="display: none;">
-                <h2>End of Serial</h2>
-                <p id="end-message">You've reached the end of this available serial.</p>
-                <div style="margin-top: 2rem;">
-                    <button id="end-back-btn" class="btn btn-primary">Back to Series</button>
-                    <a href="index.html#series" class="btn btn-secondary">Browse More</a>
+                <div class="overlay-content">
+                    <p>End of Serial</p>
+                    <h2 id="end-series-title">Series Title</h2>
+                    <p style="text-transform: none; font-family: var(--font-main); margin-bottom: 2rem;">You've reached the end of this available serial.</p>
+                    <div class="overlay-actions">
+                        <button id="end-back-btn" class="btn btn-primary">Back to Chapters</button>
+                        <a href="index.html#series" class="btn btn-secondary" style="margin-left:0">Browse More</a>
+                    </div>
                 </div>
             </div>
         </div>
 
         <div class="watch-meta">
-            <h1 id="watch-title">Loading...</h1>
-            <div class="detail-meta">
+            <div class="watch-context-line">
                 <span id="watch-context">Series Name</span>
+                <span class="separator">/</span>
                 <span id="watch-runtime">00:00</span>
             </div>
+            <h1 id="watch-title">Loading...</h1>
             <p id="watch-description" class="detail-description"></p>
         </div>
 
         <div class="watch-nav" id="watch-nav">
-            <a id="prev-btn" href="#" class="btn btn-secondary" style="margin-left:0">← Previous Chapter</a>
-            <a id="next-btn" href="#" class="btn btn-secondary">Next Chapter →</a>
+            <div class="nav-group">
+                <a id="prev-btn" href="#" class="btn btn-secondary" style="margin-left:0">← Previous Chapter</a>
+                <a id="next-btn" href="#" class="btn btn-secondary" style="margin-left:0">Next Chapter →</a>
+            </div>
+            <div class="nav-group">
+                <a id="list-btn" href="#" class="btn btn-secondary" style="margin-left:0">Back to List</a>
+            </div>
         </div>
     </main>
 
@@ -80,6 +94,13 @@
             } else {
                 showError();
             }
+            
+            // Handle escape key to cancel auto-next
+            window.addEventListener('keydown', (e) => {
+                if (e.key === 'Escape') {
+                    cancelAutoNext();
+                }
+            });
         }
 
         function renderChapter(seriesId, chapterNum) {
@@ -97,10 +118,13 @@
             document.getElementById('watch-context').textContent = series.title;
             document.getElementById('watch-runtime').textContent = chapter.runtime;
             document.getElementById('watch-description').textContent = chapter.description;
-            document.getElementById('back-link').href = `series.html?id=${seriesId}`;
+            
+            const backUrl = `series.html?id=${seriesId}`;
+            document.getElementById('back-link').href = backUrl;
             document.getElementById('back-link').textContent = `← Back to ${series.title}`;
+            document.getElementById('list-btn').href = backUrl;
 
-            setupPlayer(chapter.video, chapter.thumbnail);
+            setupPlayer(chapter.video, chapter.thumbnail, chapter.videoType || 'native');
             setupNavigation(seriesId, chapter.number);
             
             // Save Progress
@@ -120,19 +144,81 @@
             document.getElementById('watch-context').textContent = blitz.creator;
             document.getElementById('watch-runtime').textContent = blitz.runtime;
             document.getElementById('watch-description').textContent = blitz.description;
-            document.getElementById('back-link').href = `index.html#blitz`;
+            
+            const backUrl = `index.html#blitz`;
+            document.getElementById('back-link').href = backUrl;
             document.getElementById('back-link').textContent = `← Back to Blitz`;
-            document.getElementById('watch-nav').style.display = 'none';
+            document.getElementById('list-btn').href = backUrl;
+            document.getElementById('list-btn').textContent = 'Back to Blitz';
+            
+            document.getElementById('prev-btn').style.display = 'none';
+            document.getElementById('next-btn').style.display = 'none';
 
-            setupPlayer(blitz.video, blitz.thumbnail);
+            setupPlayer(blitz.video, blitz.thumbnail, blitz.videoType || 'native');
         }
 
-        function setupPlayer(videoUrl, posterUrl) {
-            const player = document.getElementById('player');
-            const source = document.getElementById('video-source');
+        function setupPlayer(videoUrl, posterUrl, videoType = 'native') {
+            const videoArea = document.getElementById('video-area');
+            let player = document.getElementById('player');
+
+            if (videoType === 'youtube') {
+                if (player && player.tagName === 'VIDEO') {
+                    const iframe = document.createElement('iframe');
+                    iframe.id = 'player';
+                    videoArea.replaceChild(iframe, player);
+                    player = iframe;
+                }
+                
+                player.src = videoUrl;
+                player.title = "YouTube video player";
+                player.setAttribute('frameborder', '0');
+                player.setAttribute('allow', 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share');
+                player.setAttribute('referrerpolicy', 'strict-origin-when-cross-origin');
+                player.setAttribute('allowfullscreen', '');
+                return;
+            }
+
+            // Native Player
+            if (player && player.tagName === 'IFRAME') {
+                const video = document.createElement('video');
+                video.id = 'player';
+                video.controls = true;
+                video.autoplay = true;
+                videoArea.replaceChild(video, player);
+                player = video;
+            }
+
+            let source = document.getElementById('video-source');
+            if (!source) {
+                source = document.createElement('source');
+                source.id = 'video-source';
+                source.type = 'video/mp4';
+                player.appendChild(source);
+            }
+            
             source.src = videoUrl;
-            player.poster = posterUrl;
-            player.load();
+            
+            // Check poster
+            if (posterUrl) {
+                const posterImg = new Image();
+                posterImg.onerror = () => {
+                    console.error(`Media missing: ${posterUrl}`);
+                    player.poster = ''; 
+                };
+                posterImg.src = posterUrl;
+            }
+            player.poster = posterUrl || '';
+            
+            // Handle missing video
+            player.onerror = () => {
+                console.error(`Media missing: ${videoUrl}`);
+                videoArea.innerHTML = `
+                    <div class="media-placeholder">
+                        <div style="font-size: 2rem; margin-bottom: 1rem;">Video File Missing</div>
+                        <div style="font-size: 1rem; text-transform: none; opacity: 0.8;">${videoUrl}</div>
+                    </div>
+                `;
+            };
 
             player.onended = () => {
                 const params = new URLSearchParams(window.location.search);
@@ -148,6 +234,33 @@
                     }
                 }
             };
+            
+            player.ontimeupdate = () => {
+                const params = new URLSearchParams(window.location.search);
+                const seriesId = params.get('series');
+                const chapterNum = params.get('chapter');
+                const blitzId = params.get('blitz');
+                
+                if (player.currentTime > 5) {
+                    const progressKey = blitzId ? `progress_blitz_${blitzId}` : `progress_${seriesId}_${chapterNum}`;
+                    localStorage.setItem(progressKey, player.currentTime);
+                }
+            };
+
+            player.onloadedmetadata = () => {
+                const params = new URLSearchParams(window.location.search);
+                const seriesId = params.get('series');
+                const chapterNum = params.get('chapter');
+                const blitzId = params.get('blitz');
+                const progressKey = blitzId ? `progress_blitz_${blitzId}` : `progress_${seriesId}_${chapterNum}`;
+                const savedTime = localStorage.getItem(progressKey);
+                
+                if (savedTime && parseFloat(savedTime) < player.duration - 10) {
+                    player.currentTime = parseFloat(savedTime);
+                }
+            };
+
+            player.load();
         }
 
         function setupNavigation(seriesId, chapterNum) {
@@ -176,13 +289,22 @@
             const overlay = document.getElementById('auto-next-overlay');
             const timerDisplay = document.getElementById('countdown-timer');
             const nextTitle = document.getElementById('next-title');
+            const previewContainer = document.getElementById('next-preview-container');
             
             nextTitle.textContent = `Chapter ${next.number}: ${next.title}`;
+            
+            if (next.thumbnail) {
+                previewContainer.innerHTML = `<img src="${next.thumbnail}" alt="${next.title}" onerror="console.error('Media missing: ${next.thumbnail}'); this.replaceWith(createOverlayPlaceholder())">`;
+            } else {
+                previewContainer.innerHTML = createOverlayPlaceholder();
+            }
+
             overlay.style.display = 'flex';
             
             let timeLeft = 10;
             timerDisplay.textContent = timeLeft;
             
+            clearInterval(countdownInterval);
             countdownInterval = setInterval(() => {
                 timeLeft--;
                 timerDisplay.textContent = timeLeft;
@@ -193,18 +315,26 @@
             }, 1000);
 
             document.getElementById('play-next-btn').onclick = playNext;
-            document.getElementById('cancel-next-btn').onclick = () => {
-                clearInterval(countdownInterval);
-                overlay.style.display = 'none';
-            };
+            document.getElementById('cancel-next-btn').onclick = cancelAutoNext;
+        }
+
+        function cancelAutoNext() {
+            clearInterval(countdownInterval);
+            document.getElementById('auto-next-overlay').style.display = 'none';
         }
 
         function playNext() {
             window.location.href = `watch.html?series=${currentSeriesId}&chapter=${nextChapterData.number}`;
         }
 
+        function createOverlayPlaceholder() {
+            return `<div class="media-placeholder" style="width:240px; height:135px; margin:0 auto;">Missing Thumb</div>`;
+        }
+
         function showSeriesEnd() {
             const overlay = document.getElementById('series-end-overlay');
+            const series = getSeriesById(currentSeriesId);
+            document.getElementById('end-series-title').textContent = series ? series.title : 'Series';
             overlay.style.display = 'flex';
             document.getElementById('end-back-btn').onclick = () => {
                 window.location.href = `series.html?id=${currentSeriesId}`;
@@ -214,9 +344,12 @@
         function showError() {
             document.getElementById('watch-main').innerHTML = `
                 <div style="text-align: center; padding: 100px 0;">
-                    <h2>Video not found</h2>
-                    <p>The content you are looking for is missing or invalid.</p>
-                    <a href="index.html" class="btn btn-primary" style="margin-top: 2rem;">Return Home</a>
+                    <h2 style="font-size: 3rem; color: var(--accent-primary); margin-bottom: 1rem;">CONTENT NOT FOUND</h2>
+                    <p style="font-size: 1.2rem; margin-bottom: 2rem;">The transmission has been lost or the coordinates are invalid.</p>
+                    <div style="display: flex; gap: 1rem; justify-content: center;">
+                        <a href="index.html" class="btn btn-primary">Return Home</a>
+                        <a href="index.html#series" class="btn btn-secondary" style="margin-left:0">Browse Series</a>
+                    </div>
                 </div>
             `;
         }

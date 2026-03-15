@@ -149,7 +149,7 @@ Something along these lines is fine:
   /js
   /images
   /posters
-  /thumbs
+  /thumbnails
 
 /data/
   library.json

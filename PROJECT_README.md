@@ -20,7 +20,7 @@ AtomicFlix is a retro-inspired, lightweight, streaming-style website for seriali
     │   └── data-loader.js# JavaScript Data Module
     ├── posters/          # Series Posters
     ├── banners/          # Series Banners
-    ├── thumbs/           # Chapter Thumbnails
+    ├── thumbnails/           # Chapter Thumbnails
     └── video/            # MP4 Video Files
 ```
 

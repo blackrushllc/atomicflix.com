@@ -377,10 +377,10 @@ Examples:
     * `/assets/posters/city-at-worlds-end/poster.jpg`
 * banners:
 
-    * `/assets/banners/city-at-worlds-end/banner.jpg`
-* chapter thumbs:
+    * `/assets/banners/city-at-worlds-end/cover.jpg`
+* chapter thumbnails:
 
-    * `/assets/thumbs/city-at-worlds-end/ch01.jpg`
+    * `/assets/thumbnails/city-at-worlds-end/ch01.jpg`
 * videos:
 
     * `/assets/video/city-at-worlds-end/ch01.mp4`
@@ -516,7 +516,7 @@ You can also hand Junie this **starter example** so she has something concrete t
     "featuredSeriesId": "city-at-worlds-end",
     "headline": "Binge the Golden Age",
     "subheadline": "Classic futures, restored and re-serialized for modern screens.",
-    "backgroundImage": "/assets/banners/city-at-worlds-end/banner.jpg",
+    "backgroundImage": "/assets/banners/city-at-worlds-end/cover.jpg",
     "primaryCtaLabel": "Watch Now",
     "secondaryCtaLabel": "Browse Chapters"
   },
@@ -549,7 +549,7 @@ You can also hand Junie this **starter example** so she has something concrete t
       "description": "A quiet American town is hurled into the unimaginable far future, where the last ruins of civilization stand against cosmic desolation.",
       "longDescription": "AtomicFlix presents a serialized adaptation of Edmond Hamilton’s sweeping end-of-time adventure, blending mystery, wonder, and stark cosmic scale.",
       "poster": "/assets/posters/city-at-worlds-end/poster.jpg",
-      "banner": "/assets/banners/city-at-worlds-end/banner.jpg",
+      "banner": "/assets/banners/city-at-worlds-end/cover.jpg",
       "tags": ["Time Displacement", "Far Future", "Cosmic Ruins"],
       "genre": "Science Fiction",
       "status": "ongoing",
@@ -563,9 +563,9 @@ You can also hand Junie this **starter example** so she has something concrete t
           "title": "The Vanishing Horizon",
           "description": "A familiar town wakes into an alien stillness and the first signs emerge that the world itself is no longer the one it knew.",
           "runtime": "08:40",
-          "thumbnail": "/assets/thumbs/city-at-worlds-end/ch01.jpg",
+          "thumbnail": "/assets/thumbnails/city-at-worlds-end/ch01.jpg",
           "video": "/assets/video/city-at-worlds-end/ch01.mp4",
-          "posterFrame": "/assets/thumbs/city-at-worlds-end/ch01.jpg",
+          "posterFrame": "/assets/thumbnails/city-at-worlds-end/ch01.jpg",
           "airLabel": "Chapter 1",
           "isPublished": true
         },
@@ -575,9 +575,9 @@ You can also hand Junie this **starter example** so she has something concrete t
           "title": "Ruins Beneath Strange Suns",
           "description": "The truth widens as the town’s survivors discover they have not merely been moved, but cast into an age beyond imagination.",
           "runtime": "09:12",
-          "thumbnail": "/assets/thumbs/city-at-worlds-end/ch02.jpg",
+          "thumbnail": "/assets/thumbnails/city-at-worlds-end/ch02.jpg",
           "video": "/assets/video/city-at-worlds-end/ch02.mp4",
-          "posterFrame": "/assets/thumbs/city-at-worlds-end/ch02.jpg",
+          "posterFrame": "/assets/thumbnails/city-at-worlds-end/ch02.jpg",
           "airLabel": "Chapter 2",
           "isPublished": true
         },
@@ -587,9 +587,9 @@ You can also hand Junie this **starter example** so she has something concrete t
           "title": "The Last City Calls",
           "description": "A dying future reveals its final refuge, and the visitors from the past begin to understand why they were brought here.",
           "runtime": "10:01",
-          "thumbnail": "/assets/thumbs/city-at-worlds-end/ch03.jpg",
+          "thumbnail": "/assets/thumbnails/city-at-worlds-end/ch03.jpg",
           "video": "/assets/video/city-at-worlds-end/ch03.mp4",
-          "posterFrame": "/assets/thumbs/city-at-worlds-end/ch03.jpg",
+          "posterFrame": "/assets/thumbnails/city-at-worlds-end/ch03.jpg",
           "airLabel": "Chapter 3",
           "isPublished": true
         }
@@ -603,7 +603,7 @@ You can also hand Junie this **starter example** so she has something concrete t
       "description": "An expedition into the unimaginable depths uncovers a hidden world beneath the earth.",
       "longDescription": "A subterranean serial of peril, discovery, and classic magazine-era wonder.",
       "poster": "/assets/posters/two-thousand-miles-below/poster.jpg",
-      "banner": "/assets/banners/two-thousand-miles-below/banner.jpg",
+      "banner": "/assets/banners/two-thousand-miles-below/cover.jpg",
       "tags": ["Underground World", "Adventure", "Pulp"],
       "genre": "Science Fiction Adventure",
       "status": "ongoing",
@@ -617,9 +617,9 @@ You can also hand Junie this **starter example** so she has something concrete t
           "title": "Descent",
           "description": "A dangerous mission begins beneath the surface of the known world.",
           "runtime": "07:48",
-          "thumbnail": "/assets/thumbs/two-thousand-miles-below/ch01.jpg",
+          "thumbnail": "/assets/thumbnails/two-thousand-miles-below/ch01.jpg",
           "video": "/assets/video/two-thousand-miles-below/ch01.mp4",
-          "posterFrame": "/assets/thumbs/two-thousand-miles-below/ch01.jpg",
+          "posterFrame": "/assets/thumbnails/two-thousand-miles-below/ch01.jpg",
           "airLabel": "Chapter 1",
           "isPublished": true
         },
@@ -629,9 +629,9 @@ You can also hand Junie this **starter example** so she has something concrete t
           "title": "The Hidden Vaults",
           "description": "The explorers encounter signs that the deep earth is neither empty nor dead.",
           "runtime": "08:36",
-          "thumbnail": "/assets/thumbs/two-thousand-miles-below/ch02.jpg",
+          "thumbnail": "/assets/thumbnails/two-thousand-miles-below/ch02.jpg",
           "video": "/assets/video/two-thousand-miles-below/ch02.mp4",
-          "posterFrame": "/assets/thumbs/two-thousand-miles-below/ch02.jpg",
+          "posterFrame": "/assets/thumbnails/two-thousand-miles-below/ch02.jpg",
           "airLabel": "Chapter 2",
           "isPublished": true
         },
@@ -641,9 +641,9 @@ You can also hand Junie this **starter example** so she has something concrete t
           "title": "Kingdom Under Stone",
           "description": "What seemed like geology becomes a living realm with its own power and peril.",
           "runtime": "09:05",
-          "thumbnail": "/assets/thumbs/two-thousand-miles-below/ch03.jpg",
+          "thumbnail": "/assets/thumbnails/two-thousand-miles-below/ch03.jpg",
           "video": "/assets/video/two-thousand-miles-below/ch03.mp4",
-          "posterFrame": "/assets/thumbs/two-thousand-miles-below/ch03.jpg",
+          "posterFrame": "/assets/thumbnails/two-thousand-miles-below/ch03.jpg",
           "airLabel": "Chapter 3",
           "isPublished": true
         }
@@ -657,7 +657,7 @@ You can also hand Junie this **starter example** so she has something concrete t
       "description": "A pioneering lunar mission becomes a tense race between courage, mystery, and the unknown.",
       "longDescription": "A sleek atomic-age journey to the moon, serialized for modern binge watching.",
       "poster": "/assets/posters/first-on-the-moon/poster.jpg",
-      "banner": "/assets/banners/first-on-the-moon/banner.jpg",
+      "banner": "/assets/banners/first-on-the-moon/cover.jpg",
       "tags": ["Moon Voyage", "Space Race", "Exploration"],
       "genre": "Space Adventure",
       "status": "ongoing",
@@ -671,9 +671,9 @@ You can also hand Junie this **starter example** so she has something concrete t
           "title": "Countdown",
           "description": "A daring mission leaves Earth behind and enters the silence beyond the atmosphere.",
           "runtime": "08:14",
-          "thumbnail": "/assets/thumbs/first-on-the-moon/ch01.jpg",
+          "thumbnail": "/assets/thumbnails/first-on-the-moon/ch01.jpg",
           "video": "/assets/video/first-on-the-moon/ch01.mp4",
-          "posterFrame": "/assets/thumbs/first-on-the-moon/ch01.jpg",
+          "posterFrame": "/assets/thumbnails/first-on-the-moon/ch01.jpg",
           "airLabel": "Chapter 1",
           "isPublished": true
         },
@@ -683,9 +683,9 @@ You can also hand Junie this **starter example** so she has something concrete t
           "title": "Transit",
           "description": "The crew faces mechanical strain, psychological pressure, and the growing presence of lunar mystery.",
           "runtime": "09:02",
-          "thumbnail": "/assets/thumbs/first-on-the-moon/ch02.jpg",
+          "thumbnail": "/assets/thumbnails/first-on-the-moon/ch02.jpg",
           "video": "/assets/video/first-on-the-moon/ch02.mp4",
-          "posterFrame": "/assets/thumbs/first-on-the-moon/ch02.jpg",
+          "posterFrame": "/assets/thumbnails/first-on-the-moon/ch02.jpg",
           "airLabel": "Chapter 2",
           "isPublished": true
         },
@@ -695,9 +695,9 @@ You can also hand Junie this **starter example** so she has something concrete t
           "title": "The Silent Surface",
           "description": "The moon is reached, but the first footsteps reveal more questions than triumph.",
           "runtime": "10:11",
-          "thumbnail": "/assets/thumbs/first-on-the-moon/ch03.jpg",
+          "thumbnail": "/assets/thumbnails/first-on-the-moon/ch03.jpg",
           "video": "/assets/video/first-on-the-moon/ch03.mp4",
-          "posterFrame": "/assets/thumbs/first-on-the-moon/ch03.jpg",
+          "posterFrame": "/assets/thumbnails/first-on-the-moon/ch03.jpg",
           "airLabel": "Chapter 3",
           "isPublished": true
         }
@@ -807,4 +807,4 @@ You can also hand Junie this **starter example** so she has something concrete t
 }
 ```
 
-If you want, next I can give you a **third Junie prompt for the actual watch-page behavior and auto-next overlay logic only**, so Junie can implement that piece with very explicit UX rules.
+python scripts/gen.py --source source-art/city.webp --target city-at-worlds-end/ch03.jpg
