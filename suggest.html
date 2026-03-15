@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suggest a Book | AtomicFlix</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+    <header class="scrolled">
+        <a href="index.html" class="logo">AtomicFlix</a>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#series">Series</a></li>
+                <li><a href="index.html#blitz">Blitz</a></li>
+                <li><a href="contributors.html">Contributors</a></li>
+                <li><a href="suggest.html">Suggest a Book</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main style="padding: 120px 4% 4rem; max-width: 800px; margin: 0 auto;">
+        <h1 id="page-title" style="font-size: 3rem; margin-bottom: 2rem;">Suggest a Book</h1>
+        <p id="page-intro" style="font-size: 1.2rem; margin-bottom: 2rem; color: var(--text-muted);"></p>
+        
+        <div style="background: var(--bg-card); padding: 2rem; border-radius: 8px; margin-bottom: 2rem;">
+            <h2>Submission Guidelines</h2>
+            <ul id="guidelines-list" style="margin-top: 1rem; list-style: circle; padding-left: 1.5rem;">
+                <!-- Guidelines injected here -->
+            </ul>
+        </div>
+
+        <div style="background: var(--bg-card); padding: 2rem; border-radius: 8px;">
+            <h2>Send Your Suggestion</h2>
+            <p id="contact-message" style="margin: 1rem 0;"></p>
+            <div style="color: var(--accent-secondary); font-family: var(--font-retro);">
+                <p>Email: <span id="contact-email"></span></p>
+                <p>Social: <span id="contact-social"></span></p>
+            </div>
+            <p id="page-notes" style="margin-top: 1.5rem; font-size: 0.9rem; color: var(--text-muted);"></p>
+        </div>
+    </main>
+
+    <footer>
+        <div class="logo">AtomicFlix</div>
+        <p>&copy; 2026 AtomicFlix. All rights reserved.</p>
+    </footer>
+
+    <script type="module">
+        import { loadLibrary, getSuggestBookContent } from './assets/js/data-loader.js';
+
+        async function init() {
+            await loadLibrary();
+            const content = getSuggestBookContent();
+
+            document.getElementById('page-title').textContent = content.title;
+            document.getElementById('page-intro').textContent = content.intro;
+            
+            const guidelinesList = document.getElementById('guidelines-list');
+            content.guidelines.forEach(guide => {
+                const li = document.createElement('li');
+                li.textContent = guide;
+                li.style.marginBottom = '0.5rem';
+                guidelinesList.appendChild(li);
+            });
+
+            document.getElementById('contact-message').textContent = content.contact.message;
+            document.getElementById('contact-email').textContent = content.contact.email;
+            document.getElementById('contact-social').textContent = content.contact.socialDm;
+            document.getElementById('page-notes').textContent = content.notes;
+        }
+
+        init();
+    </script>
+</body>
+</html>

@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Watch | AtomicFlix</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body class="watch-page">
+    <header class="scrolled" style="background: rgba(0,0,0,0.9);">
+        <a href="index.html" class="logo">AtomicFlix</a>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a id="back-link" href="#">← Back</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="watch-container" id="watch-main">
+        <div class="video-wrapper">
+            <video id="player" controls autoplay poster="">
+                <source id="video-source" src="" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            
+            <div id="auto-next-overlay" class="overlay" style="display: none;">
+                <p>Up Next</p>
+                <h2 id="next-title">Next Chapter Title</h2>
+                <div class="countdown" id="countdown-timer">10</div>
+                <div>
+                    <button id="play-next-btn" class="btn btn-primary">Play Next Now</button>
+                    <button id="cancel-next-btn" class="btn btn-secondary">Cancel</button>
+                </div>
+            </div>
+
+            <div id="series-end-overlay" class="overlay" style="display: none;">
+                <h2>End of Serial</h2>
+                <p id="end-message">You've reached the end of this available serial.</p>
+                <div style="margin-top: 2rem;">
+                    <button id="end-back-btn" class="btn btn-primary">Back to Series</button>
+                    <a href="index.html#series" class="btn btn-secondary">Browse More</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="watch-meta">
+            <h1 id="watch-title">Loading...</h1>
+            <div class="detail-meta">
+                <span id="watch-context">Series Name</span>
+                <span id="watch-runtime">00:00</span>
+            </div>
+            <p id="watch-description" class="detail-description"></p>
+        </div>
+
+        <div class="watch-nav" id="watch-nav">
+            <a id="prev-btn" href="#" class="btn btn-secondary" style="margin-left:0">← Previous Chapter</a>
+            <a id="next-btn" href="#" class="btn btn-secondary">Next Chapter →</a>
+        </div>
+    </main>
+
+    <script type="module">
+        import { loadLibrary, getSeriesById, getChapterBySeriesAndNumber, getNextChapter, getPreviousChapter, getBlitzById } from './assets/js/data-loader.js';
+
+        let countdownInterval;
+        let nextChapterData = null;
+        let currentSeriesId = null;
+
+        async function init() {
+            await loadLibrary();
+            const params = new URLSearchParams(window.location.search);
+            const seriesId = params.get('series');
+            const chapterNum = params.get('chapter');
+            const blitzId = params.get('blitz');
+
+            if (blitzId) {
+                renderBlitz(blitzId);
+            } else if (seriesId && chapterNum) {
+                renderChapter(seriesId, chapterNum);
+            } else {
+                showError();
+            }
+        }
+
+        function renderChapter(seriesId, chapterNum) {
+            currentSeriesId = seriesId;
+            const series = getSeriesById(seriesId);
+            const chapter = getChapterBySeriesAndNumber(seriesId, chapterNum);
+
+            if (!series || !chapter) {
+                showError();
+                return;
+            }
+
+            document.title = `${series.title} - Ch ${chapter.number} | AtomicFlix`;
+            document.getElementById('watch-title').textContent = `Chapter ${chapter.number}: ${chapter.title}`;
+            document.getElementById('watch-context').textContent = series.title;
+            document.getElementById('watch-runtime').textContent = chapter.runtime;
+            document.getElementById('watch-description').textContent = chapter.description;
+            document.getElementById('back-link').href = `series.html?id=${seriesId}`;
+            document.getElementById('back-link').textContent = `← Back to ${series.title}`;
+
+            setupPlayer(chapter.video, chapter.thumbnail);
+            setupNavigation(seriesId, chapter.number);
+            
+            // Save Progress
+            localStorage.setItem(`atomicflix_last_series`, seriesId);
+            localStorage.setItem(`atomicflix_last_chapter_${seriesId}`, chapterNum);
+        }
+
+        function renderBlitz(blitzId) {
+            const blitz = getBlitzById(blitzId);
+            if (!blitz) {
+                showError();
+                return;
+            }
+
+            document.title = `${blitz.title} | AtomicFlix`;
+            document.getElementById('watch-title').textContent = blitz.title;
+            document.getElementById('watch-context').textContent = blitz.creator;
+            document.getElementById('watch-runtime').textContent = blitz.runtime;
+            document.getElementById('watch-description').textContent = blitz.description;
+            document.getElementById('back-link').href = `index.html#blitz`;
+            document.getElementById('back-link').textContent = `← Back to Blitz`;
+            document.getElementById('watch-nav').style.display = 'none';
+
+            setupPlayer(blitz.video, blitz.thumbnail);
+        }
+
+        function setupPlayer(videoUrl, posterUrl) {
+            const player = document.getElementById('player');
+            const source = document.getElementById('video-source');
+            source.src = videoUrl;
+            player.poster = posterUrl;
+            player.load();
+
+            player.onended = () => {
+                const params = new URLSearchParams(window.location.search);
+                const seriesId = params.get('series');
+                const chapterNum = params.get('chapter');
+                
+                if (seriesId && chapterNum) {
+                    const next = getNextChapter(seriesId, chapterNum);
+                    if (next) {
+                        showAutoNext(next);
+                    } else {
+                        showSeriesEnd();
+                    }
+                }
+            };
+        }
+
+        function setupNavigation(seriesId, chapterNum) {
+            const prev = getPreviousChapter(seriesId, chapterNum);
+            const next = getNextChapter(seriesId, chapterNum);
+            const prevBtn = document.getElementById('prev-btn');
+            const nextBtn = document.getElementById('next-btn');
+
+            if (prev) {
+                prevBtn.href = `watch.html?series=${seriesId}&chapter=${prev.number}`;
+                prevBtn.style.visibility = 'visible';
+            } else {
+                prevBtn.style.visibility = 'hidden';
+            }
+
+            if (next) {
+                nextBtn.href = `watch.html?series=${seriesId}&chapter=${next.number}`;
+                nextBtn.style.visibility = 'visible';
+            } else {
+                nextBtn.style.visibility = 'hidden';
+            }
+        }
+
+        function showAutoNext(next) {
+            nextChapterData = next;
+            const overlay = document.getElementById('auto-next-overlay');
+            const timerDisplay = document.getElementById('countdown-timer');
+            const nextTitle = document.getElementById('next-title');
+            
+            nextTitle.textContent = `Chapter ${next.number}: ${next.title}`;
+            overlay.style.display = 'flex';
+            
+            let timeLeft = 10;
+            timerDisplay.textContent = timeLeft;
+            
+            countdownInterval = setInterval(() => {
+                timeLeft--;
+                timerDisplay.textContent = timeLeft;
+                if (timeLeft <= 0) {
+                    clearInterval(countdownInterval);
+                    playNext();
+                }
+            }, 1000);
+
+            document.getElementById('play-next-btn').onclick = playNext;
+            document.getElementById('cancel-next-btn').onclick = () => {
+                clearInterval(countdownInterval);
+                overlay.style.display = 'none';
+            };
+        }
+
+        function playNext() {
+            window.location.href = `watch.html?series=${currentSeriesId}&chapter=${nextChapterData.number}`;
+        }
+
+        function showSeriesEnd() {
+            const overlay = document.getElementById('series-end-overlay');
+            overlay.style.display = 'flex';
+            document.getElementById('end-back-btn').onclick = () => {
+                window.location.href = `series.html?id=${currentSeriesId}`;
+            };
+        }
+
+        function showError() {
+            document.getElementById('watch-main').innerHTML = `
+                <div style="text-align: center; padding: 100px 0;">
+                    <h2>Video not found</h2>
+                    <p>The content you are looking for is missing or invalid.</p>
+                    <a href="index.html" class="btn btn-primary" style="margin-top: 2rem;">Return Home</a>
+                </div>
+            `;
+        }
+
+        init();
+    </script>
+</body>
+</html>

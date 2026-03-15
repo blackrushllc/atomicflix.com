@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Series Detail | AtomicFlix</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+    <header class="scrolled">
+        <a href="index.html" class="logo">AtomicFlix</a>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#series">Series</a></li>
+                <li><a href="index.html#blitz">Blitz</a></li>
+                <li><a href="contributors.html">Contributors</a></li>
+                <li><a href="suggest.html">Suggest a Book</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="series-detail">
+        <section class="detail-hero" id="detail-hero">
+            <div class="detail-content">
+                <img id="detail-poster" class="detail-poster" src="" alt="">
+                <div class="detail-info">
+                    <h1 id="detail-title">Series Title</h1>
+                    <div class="detail-meta">
+                        <span id="detail-author">Author Name</span>
+                        <span id="detail-year">Source Era</span>
+                        <span id="detail-genre">Genre</span>
+                    </div>
+                    <p id="detail-description" class="detail-description">Long Description</p>
+                    <div id="detail-tags" style="margin-top: 1rem; color: var(--text-muted); font-size: 0.9rem;"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="chapter-list">
+            <h2>Chapters</h2>
+            <div id="chapters-container">
+                <!-- Chapters injected here -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="logo">AtomicFlix</div>
+        <p>&copy; 2026 AtomicFlix. All rights reserved.</p>
+    </footer>
+
+    <script type="module">
+        import { loadLibrary, getSeriesById } from './assets/js/data-loader.js';
+
+        async function init() {
+            await loadLibrary();
+            const params = new URLSearchParams(window.location.search);
+            const id = params.get('id');
+            const series = getSeriesById(id);
+
+            if (!series) {
+                document.getElementById('series-detail').innerHTML = '<div style="padding: 200px 4%; text-align: center;"><h2>Series not found</h2><a href="index.html" class="btn btn-primary" style="margin-top: 1rem;">Back to Home</a></div>';
+                return;
+            }
+
+            document.title = `${series.title} | AtomicFlix`;
+            document.getElementById('detail-title').textContent = series.title;
+            document.getElementById('detail-author').textContent = series.author;
+            document.getElementById('detail-year').textContent = series.sourceEra;
+            document.getElementById('detail-genre').textContent = series.genre;
+            document.getElementById('detail-description').textContent = series.longDescription || series.description;
+            document.getElementById('detail-poster').src = series.poster;
+            document.getElementById('detail-poster').onerror = function() { this.src = `https://via.placeholder.com/300x450?text=${encodeURIComponent(series.title)}`; };
+            document.getElementById('detail-hero').style.backgroundImage = `url(${series.banner})`;
+            
+            const tagsContainer = document.getElementById('detail-tags');
+            series.tags.forEach(tag => {
+                const span = document.createElement('span');
+                span.style.marginRight = '1rem';
+                span.textContent = `#${tag}`;
+                tagsContainer.appendChild(span);
+            });
+
+            const chaptersContainer = document.getElementById('chapters-container');
+            series.chapters.forEach(chapter => {
+                const row = document.createElement('div');
+                row.className = 'chapter-row';
+                row.innerHTML = `
+                    <img class="chapter-thumb" src="${chapter.thumbnail}" alt="${chapter.title}" onerror="this.src='https://via.placeholder.com/180x101?text=Chapter+${chapter.number}'">
+                    <div class="chapter-details">
+                        <h3>Chapter ${chapter.number}: ${chapter.title}</h3>
+                        <p>${chapter.description}</p>
+                        <div class="card-meta" style="margin-top: 0.5rem;">Runtime: ${chapter.runtime}</div>
+                    </div>
+                `;
+                row.onclick = () => window.location.href = `watch.html?series=${series.id}&chapter=${chapter.number}`;
+                chaptersContainer.appendChild(row);
+            });
+        }
+
+        init();
+    </script>
+</body>
+</html>
