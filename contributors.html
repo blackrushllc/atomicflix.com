@@ -9,6 +9,11 @@
 <body>
     <header class="scrolled">
         <a href="index.html" class="logo">AtomicFlix</a>
+        <button class="nav-toggle" aria-label="Toggle navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -20,21 +25,21 @@
         </nav>
     </header>
 
-    <main style="padding: 120px 4% 4rem; max-width: 800px; margin: 0 auto;">
-        <h1 id="page-title" style="font-size: 3rem; margin-bottom: 2rem;">Contributors</h1>
-        <p id="page-intro" style="font-size: 1.2rem; margin-bottom: 2rem; color: var(--text-muted);"></p>
+    <main class="static-page">
+        <h1 id="page-title">Contributors</h1>
+        <p id="page-intro" class="page-intro"></p>
         
-        <div style="background: var(--bg-card); padding: 2rem; border-radius: 8px; margin-bottom: 2rem;">
+        <div class="content-box">
             <h2>Areas of Contribution</h2>
-            <ul id="areas-list" style="margin-top: 1rem; display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+            <ul id="areas-list" class="grid-list">
                 <!-- Areas injected here -->
             </ul>
         </div>
 
-        <div style="background: var(--bg-card); padding: 2rem; border-radius: 8px;">
+        <div class="content-box">
             <h2>Contact Us</h2>
             <p id="contact-message" style="margin: 1rem 0;"></p>
-            <div style="color: var(--accent-secondary); font-family: var(--font-retro);">
+            <div class="contact-details">
                 <p>Email: <span id="contact-email"></span></p>
                 <p>Social: <span id="contact-social"></span></p>
             </div>
@@ -48,8 +53,10 @@
 
     <script type="module">
         import { loadLibrary, getContributorsContent } from './assets/js/data-loader.js';
+        import { initMobileMenu } from './assets/js/ui.js';
 
         async function init() {
+            initMobileMenu();
             await loadLibrary();
             const content = getContributorsContent();
 

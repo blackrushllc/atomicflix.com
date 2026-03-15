@@ -9,6 +9,11 @@
 <body class="watch-page">
     <header class="scrolled" style="background: rgba(0,0,0,0.9);">
         <a href="index.html" class="logo">AtomicFlix</a>
+        <button class="nav-toggle" aria-label="Toggle navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -75,12 +80,14 @@
 
     <script type="module">
         import { loadLibrary, getSeriesById, getChapterBySeriesAndNumber, getNextChapter, getPreviousChapter, getBlitzById } from './assets/js/data-loader.js';
+        import { initMobileMenu } from './assets/js/ui.js';
 
         let countdownInterval;
         let nextChapterData = null;
         let currentSeriesId = null;
 
         async function init() {
+            initMobileMenu();
             await loadLibrary();
             const params = new URLSearchParams(window.location.search);
             const seriesId = params.get('series');
@@ -328,7 +335,7 @@
         }
 
         function createOverlayPlaceholder() {
-            return `<div class="media-placeholder" style="width:240px; height:135px; margin:0 auto;">Missing Thumb</div>`;
+            return `<div class="media-placeholder" style="margin:0 auto;">Missing Thumb</div>`;
         }
 
         function showSeriesEnd() {
@@ -343,10 +350,11 @@
 
         function showError() {
             document.getElementById('watch-main').innerHTML = `
-                <div style="text-align: center; padding: 100px 0;">
-                    <h2 style="font-size: 3rem; color: var(--accent-primary); margin-bottom: 1rem;">CONTENT NOT FOUND</h2>
-                    <p style="font-size: 1.2rem; margin-bottom: 2rem;">The transmission has been lost or the coordinates are invalid.</p>
-                    <div style="display: flex; gap: 1rem; justify-content: center;">
+                <div class="error-state">
+                    <h1>404</h1>
+                    <h2>CONTENT NOT FOUND</h2>
+                    <p style="margin-bottom: 2rem;">The transmission has been lost or the coordinates are invalid.</p>
+                    <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
                         <a href="index.html" class="btn btn-primary">Return Home</a>
                         <a href="index.html#series" class="btn btn-secondary" style="margin-left:0">Browse Series</a>
                     </div>

@@ -9,6 +9,11 @@
 <body>
     <header class="scrolled">
         <a href="index.html" class="logo">AtomicFlix</a>
+        <button class="nav-toggle" aria-label="Toggle navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -52,15 +57,23 @@
 
     <script type="module">
         import { loadLibrary, getSeriesById } from './assets/js/data-loader.js';
+        import { initMobileMenu } from './assets/js/ui.js';
 
         async function init() {
+            initMobileMenu();
             await loadLibrary();
             const params = new URLSearchParams(window.location.search);
             const id = params.get('id');
             const series = getSeriesById(id);
 
             if (!series) {
-                document.getElementById('series-detail').innerHTML = '<div style="padding: 200px 4%; text-align: center;"><h2>Series not found</h2><a href="index.html" class="btn btn-primary" style="margin-top: 1rem;">Back to Home</a></div>';
+                document.getElementById('series-detail').innerHTML = `
+                    <div class="error-state">
+                        <h1>404</h1>
+                        <h2>Series not found</h2>
+                        <a href="index.html" class="btn btn-primary">Back to Home</a>
+                    </div>
+                `;
                 return;
             }
 

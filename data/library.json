@@ -57,7 +57,7 @@
           "number": 1,
           "title": "Cataclysm!",
           "description": "A familiar town wakes into an alien stillness and the first signs emerge that the world itself is no longer the one it knew.",
-          "runtime": "08:40",
+          "runtime": "03:52",
           "thumbnail": "assets/thumbnails/city-at-worlds-end/ch01.jpg",
           "video": "https://atomicflix.sfo3.cdn.digitaloceanspaces.com/city/The%20City%20Recap%20Chapter%201.mp4",
           "posterFrame": "assets/thumbnails/city-at-worlds-end/ch01.jpg",
@@ -69,7 +69,7 @@
           "number": 2,
           "title": "The Incredible",
           "description": "The truth widens as the town’s survivors discover they have not merely been moved, but cast into an age beyond imagination.",
-          "runtime": "04:21",
+          "runtime": "07:18",
           "thumbnail": "assets/thumbnails/city-at-worlds-end/ch02.jpg",
           "video": "https://atomicflix.sfo3.cdn.digitaloceanspaces.com/city/The%20City%20Recap%20Chapter%202a.mp4",
           "posterFrame": "assets/thumbnails/city-at-worlds-end/ch02.jpg",
@@ -81,11 +81,23 @@
           "number": 3,
           "title": "Dying Planet\n",
           "description": "The survivors confront the desolation of a world at its end, where the last remnants of humanity cling to existence against the encroaching void.",
-          "runtime": "5:53",
+          "runtime": "5:54",
           "thumbnail": "assets/thumbnails/city-at-worlds-end/ch03.jpg",
           "video": "https://atomicflix.sfo3.cdn.digitaloceanspaces.com/city/The%20City%20Recap%20Chapter%203.mp4",
           "posterFrame": "assets/thumbnails/city-at-worlds-end/ch03.jpg",
           "airLabel": "Chapter 3",
+          "isPublished": true
+        },
+        {
+          "id": "chapter-4",
+          "number": 4,
+          "title": "Dead City\n",
+          "description": "Keniston and Hubble journey out beyond the edge of town, into the unknown dead earth beyond.",
+          "runtime": "7:56",
+          "thumbnail": "assets/thumbnails/city-at-worlds-end/ch04.jpg",
+          "video": "https://atomicflix.sfo3.cdn.digitaloceanspaces.com/city/The%20City%20Recap%20Chapter%204.mp4",
+          "posterFrame": "assets/thumbnails/city-at-worlds-end/ch04.jpg",
+          "airLabel": "Chapter 4",
           "isPublished": true
         }
       ]
@@ -239,6 +251,19 @@
       "featured": false,
       "sortOrder": 3,
       "isPublished": true
+    },
+    {
+      "id": "courage-vampire-mystery",
+      "title": "Courage The Cowardly Dog - The Vampire Muriel Mystery",
+      "creator": "Cartoon Network",
+      "description": "Surreal storytelling of Courage the Cowardly Dog, the enigmatic 'Vampire Muriel' episode in the public domain",
+      "thumbnail": "assets/posters/courage-vampire-mystery/cover.jpg",
+      "video": "https://atomicflix.sfo3.cdn.digitaloceanspaces.com/city/Courage_The_Cowardly_Dog_-_The_Vampire_Muriel_Mystery.webm",
+      "runtime": "58:07",
+      "tags": ["Animation", "Courage the Cowardly Dog", "Blitz"],
+      "featured": false,
+      "sortOrder": 4,
+      "isPublished": true
     }
   ],
   "social": [
@@ -249,7 +274,7 @@
     },
     {
       "platform": "X",
-      "label": "X / Twitter",
+      "label": "X",
       "url": "https://x.com/BlackrushWorld"
     },
     {

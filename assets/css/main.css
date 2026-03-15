@@ -43,6 +43,7 @@ header {
     align-items: center;
     position: fixed;
     top: 0;
+    left: 0;
     width: 100%;
     z-index: 1000;
     transition: background-color 0.3s;
@@ -59,6 +60,7 @@ header.scrolled {
     letter-spacing: 2px;
     text-transform: uppercase;
     text-shadow: 0 0 10px rgba(209, 26, 42, 0.5);
+    z-index: 1002;
 }
 
 nav ul {
@@ -69,6 +71,38 @@ nav ul {
 nav ul li a:hover {
     color: var(--accent-secondary);
     text-shadow: 0 0 8px var(--accent-glow);
+}
+
+.nav-toggle {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem;
+    z-index: 1002;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.nav-toggle span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: var(--text-main);
+    transition: 0.3s;
+    border-radius: 2px;
+}
+
+.nav-toggle.active span:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+
+.nav-toggle.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.nav-toggle.active span:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
 }
 
 /* Hero Section */
@@ -167,6 +201,7 @@ nav ul li a:hover {
 
 .card {
     min-width: 200px;
+    max-width: 300px;
     flex: 0 0 auto;
     background-color: var(--bg-card);
     border-radius: 8px;
@@ -410,7 +445,7 @@ video, iframe {
     position: relative;
 }
 
-.next-preview img {
+.next-preview img, .next-preview .media-placeholder {
     width: 240px;
     aspect-ratio: 16/9;
     object-fit: cover;
@@ -459,6 +494,84 @@ video, iframe {
     height: 100%;
 }
 
+/* Static Pages (Contributors, Suggest) */
+.static-page {
+    padding: 120px 4% 4rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.static-page h1 {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+.page-intro {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: var(--text-muted);
+}
+
+.content-box {
+    background: var(--bg-card);
+    padding: 2rem;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+}
+
+.content-box h2 {
+    margin-bottom: 1rem;
+}
+
+.grid-list {
+    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.guidelines-list {
+    margin-top: 1rem;
+    list-style: circle;
+    padding-left: 1.5rem;
+}
+
+.guidelines-list li {
+    margin-bottom: 0.5rem;
+}
+
+.contact-details {
+    color: var(--accent-secondary);
+    font-family: var(--font-retro);
+}
+
+.page-notes {
+    margin-top: 1.5rem;
+    font-size: 0.9rem;
+    color: var(--text-muted);
+}
+
+.error-state {
+    padding: 150px 4%;
+    text-align: center;
+    min-height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.error-state h1 {
+    font-size: 5rem;
+    color: var(--accent-primary);
+    margin-bottom: 1rem;
+}
+
+.error-state h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
 /* Footer */
 footer {
     padding: 4rem 4%;
@@ -479,20 +592,190 @@ footer {
 }
 
 /* Responsive */
+@media (max-width: 1024px) {
+    .detail-hero {
+        gap: 2rem;
+    }
+    .detail-content {
+        gap: 2rem;
+    }
+}
+
 @media (max-width: 768px) {
+    header {
+        padding: 1rem 5%;
+    }
+
+    .nav-toggle {
+        display: flex;
+    }
+
+    nav {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 80%;
+        height: 100vh;
+        background-color: rgba(10, 10, 12, 0.98);
+        backdrop-filter: blur(15px);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: 0.4s ease-in-out;
+        z-index: 1001;
+        border-left: 1px solid rgba(209, 26, 42, 0.3);
+    }
+
+    nav.active {
+        right: 0;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 2.5rem;
+    }
+
+    nav ul li a {
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-family: var(--font-retro);
+    }
+
+    .hero {
+        height: 70vh;
+        padding-top: 80px;
+    }
+
+    .hero-content {
+        padding: 1.5rem;
+        background-color: rgba(0, 0, 0, 0.4);
+    }
+
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+    }
+
+    .hero-btns {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .btn-secondary {
+        margin-left: 0;
+    }
+
+    .detail-hero {
+        padding-top: 80px;
+        min-height: auto;
+    }
+
     .detail-content {
         flex-direction: column;
         align-items: center;
         text-align: center;
     }
+
     .detail-poster {
-        width: 200px;
+        width: 220px;
     }
-    .hero-content h1 {
-        font-size: 2.5rem;
+
+    .detail-info h1 {
+        font-size: 2.2rem;
     }
+
+    .detail-meta {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
     .chapter-row {
         flex-direction: column;
         text-align: center;
+        padding: 1rem;
+    }
+
+    .chapter-thumb {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .watch-container {
+        padding-top: 80px;
+    }
+
+    .watch-meta h1 {
+        font-size: 1.8rem;
+    }
+
+    .watch-context-line {
+        font-size: 0.9rem;
+        flex-wrap: wrap;
+    }
+
+    .watch-nav {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .nav-group {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .overlay h2 {
+        font-size: 1.8rem;
+    }
+
+    .countdown {
+        font-size: 3.5rem;
+    }
+
+    .next-preview img, .next-preview .media-placeholder {
+        width: 180px;
+    }
+
+    .static-page {
+        padding-top: 100px;
+    }
+
+    .static-page h1 {
+        font-size: 2.2rem;
+    }
+
+    .grid-list {
+        grid-template-columns: 1fr;
+    }
+
+    .content-box {
+        padding: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo {
+        font-size: 1.4rem;
+    }
+
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .content-row {
+        padding: 1.5rem 5%;
+    }
+
+    .content-row h2 {
+        font-size: 1.2rem;
+    }
+
+    .card {
+        min-width: 160px;
     }
 }

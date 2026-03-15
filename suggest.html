@@ -9,6 +9,11 @@
 <body>
     <header class="scrolled">
         <a href="index.html" class="logo">AtomicFlix</a>
+        <button class="nav-toggle" aria-label="Toggle navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -20,25 +25,25 @@
         </nav>
     </header>
 
-    <main style="padding: 120px 4% 4rem; max-width: 800px; margin: 0 auto;">
-        <h1 id="page-title" style="font-size: 3rem; margin-bottom: 2rem;">Suggest a Book</h1>
-        <p id="page-intro" style="font-size: 1.2rem; margin-bottom: 2rem; color: var(--text-muted);"></p>
+    <main class="static-page">
+        <h1 id="page-title">Suggest a Book</h1>
+        <p id="page-intro" class="page-intro"></p>
         
-        <div style="background: var(--bg-card); padding: 2rem; border-radius: 8px; margin-bottom: 2rem;">
+        <div class="content-box">
             <h2>Submission Guidelines</h2>
-            <ul id="guidelines-list" style="margin-top: 1rem; list-style: circle; padding-left: 1.5rem;">
+            <ul id="guidelines-list" class="guidelines-list">
                 <!-- Guidelines injected here -->
             </ul>
         </div>
 
-        <div style="background: var(--bg-card); padding: 2rem; border-radius: 8px;">
+        <div class="content-box">
             <h2>Send Your Suggestion</h2>
             <p id="contact-message" style="margin: 1rem 0;"></p>
-            <div style="color: var(--accent-secondary); font-family: var(--font-retro);">
+            <div class="contact-details">
                 <p>Email: <span id="contact-email"></span></p>
                 <p>Social: <span id="contact-social"></span></p>
             </div>
-            <p id="page-notes" style="margin-top: 1.5rem; font-size: 0.9rem; color: var(--text-muted);"></p>
+            <p id="page-notes" class="page-notes"></p>
         </div>
     </main>
 
@@ -49,8 +54,10 @@
 
     <script type="module">
         import { loadLibrary, getSuggestBookContent } from './assets/js/data-loader.js';
+        import { initMobileMenu } from './assets/js/ui.js';
 
         async function init() {
+            initMobileMenu();
             await loadLibrary();
             const content = getSuggestBookContent();
 
