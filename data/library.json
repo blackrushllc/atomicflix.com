@@ -355,6 +355,20 @@
       "Sound design",
       "Restoration assistance"
     ],
+    "techstack": [
+      "Book Sources - Project Gutenberg",
+      "Chapter Summarization - ChatGPT",
+      "AI Video Generation and character design - Flicki.com",
+      "Video Editing - VideoProc VLogger",
+      "Poster Art and Thumbnails - Windows Snipping Tool, the attached gen.py script",
+      "Web Development - IntelliJ IDEA",
+      "Vibe Coding - Jetbrains Junie Ultimate",
+      "Web and CDN/S3 Hosting - Digital Ocean",
+      "Source Repo - github.com/blackrushllc/atomicflix.com",
+      "Voice Acting - Me LOL",
+      "Funding - Me LOL",
+      "Sound Design - Are you kidding?"
+    ],
     "contact": {
       "email": "blackrushdrive@gmail.com",
       "socialDm": "@blackrushworld",

@@ -37,6 +37,15 @@
         </div>
 
         <div class="content-box">
+            <h2>Tech Stack</h2>
+            <table class="tech-table">
+                <tbody id="techstack-body">
+                    <!-- Tech stack items injected here -->
+                </tbody>
+            </table>
+        </div>
+
+        <div class="content-box">
             <h2>Contact Us</h2>
             <p id="contact-message" style="margin: 1rem 0;"></p>
             <div class="contact-details">
@@ -69,6 +78,17 @@
                 li.textContent = `• ${area}`;
                 areasList.appendChild(li);
             });
+
+            const techstackBody = document.getElementById('techstack-body');
+            if (content.techstack) {
+                content.techstack.forEach(tech => {
+                    const tr = document.createElement('tr');
+                    const td = document.createElement('td');
+                    td.textContent = tech;
+                    tr.appendChild(td);
+                    techstackBody.appendChild(tr);
+                });
+            }
 
             document.getElementById('contact-message').textContent = content.contact.message;
             document.getElementById('contact-email').textContent = content.contact.email;

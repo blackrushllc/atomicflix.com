@@ -586,6 +586,36 @@ video, iframe {
     gap: 1rem;
 }
 
+/* Table styling for Tech Stack */
+.tech-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+    font-family: var(--font-retro);
+    border: 1px solid #333;
+    font-size: 0.95rem;
+}
+
+.tech-table td {
+    padding: 0.75rem 1rem;
+    border-bottom: 1px solid #222;
+    transition: 0.2s;
+}
+
+.tech-table tr:last-child td {
+    border-bottom: none;
+}
+
+.tech-table tr:nth-child(even) {
+    background: rgba(255, 255, 255, 0.02);
+}
+
+.tech-table tr:hover td {
+    background: rgba(0, 217, 255, 0.05);
+    color: var(--accent-secondary);
+    padding-left: 1.25rem;
+}
+
 .guidelines-list {
     margin-top: 1rem;
     list-style: circle;
