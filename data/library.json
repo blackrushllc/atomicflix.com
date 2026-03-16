@@ -358,6 +358,7 @@
     "techstack": [
       "Book Sources - Project Gutenberg",
       "Chapter Summarization - ChatGPT",
+      "Text Editing - My 1997 TextPad (License still valid!)",
       "AI Video Generation and character design - Flicki.com",
       "Video Editing - VideoProc VLogger",
       "Poster Art and Thumbnails - Windows Snipping Tool, the attached gen.py script",
@@ -368,6 +369,20 @@
       "Voice Acting - Me LOL",
       "Funding - Me LOL",
       "Sound Design - Are you kidding?"
+    ],
+    "workflow": [
+      "Download the latest source text from Project Gutenberg",
+      "Summarize the chapters using ChatGPT",
+      "Edit the chapters using My 1997 Textpad",
+      "Generate AI video and character designs using Flicki.com",
+      "Redfine the characters each time for some reason",
+      "Remove the background music layers because they are too loud",
+      "Export the chapter to MP4",
+      "Edit the chapters using VideoProc VLogger and increase the speed of the cuts",
+      "Export the chapters as MP4s and upload to Digital Ocean",
+      "Create poster art and thumbnails using Windows Snipping Tool and the attached gen.py script",
+      "Manually edit the JSON files to add the chapters to the site",
+      "Upload all over social media"
     ],
     "contact": {
       "email": "blackrushdrive@gmail.com",

@@ -46,6 +46,15 @@
         </div>
 
         <div class="content-box">
+            <h2>Workflow</h2>
+            <table class="tech-table">
+                <tbody id="workflow-body">
+                    <!-- Workflow items injected here -->
+                </tbody>
+            </table>
+        </div>
+
+        <div class="content-box">
             <h2>Contact Us</h2>
             <p id="contact-message" style="margin: 1rem 0;"></p>
             <div class="contact-details">
@@ -87,6 +96,17 @@
                     td.textContent = tech;
                     tr.appendChild(td);
                     techstackBody.appendChild(tr);
+                });
+            }
+
+            const workflowBody = document.getElementById('workflow-body');
+            if (content.workflow) {
+                content.workflow.forEach(item => {
+                    const tr = document.createElement('tr');
+                    const td = document.createElement('td');
+                    td.textContent = item;
+                    tr.appendChild(td);
+                    workflowBody.appendChild(tr);
                 });
             }
 
