@@ -356,6 +356,7 @@
       "Restoration assistance"
     ],
     "techstack": [
+      "Inspiration - Audio books on Librivox",
       "Book Sources - Project Gutenberg",
       "Chapter Summarization - ChatGPT",
       "Text Editing - My 1997 TextPad (License still valid!)",
@@ -371,6 +372,7 @@
       "Sound Design - Are you kidding?"
     ],
     "workflow": [
+      "Think of a book that inspired me when I was poor and suffering and riding the bus home from work.",
       "Download the latest source text from Project Gutenberg",
       "Summarize the chapters using ChatGPT",
       "Edit the chapters using My 1997 Textpad",
@@ -382,7 +384,9 @@
       "Export the chapters as MP4s and upload to Digital Ocean",
       "Create poster art and thumbnails using Windows Snipping Tool and the attached gen.py script",
       "Manually edit the JSON files to add the chapters to the site",
-      "Upload all over social media"
+      "Push to GitHub",
+      "Upload all over social media",
+      "Watch my own videos and notice all of the mistakes I made"
     ],
     "contact": {
       "email": "blackrushdrive@gmail.com",
