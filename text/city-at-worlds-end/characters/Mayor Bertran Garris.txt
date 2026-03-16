@@ -1,0 +1,17 @@
+Role: Mayor of Middletown
+Personality: Political, conventional, overwhelmed by the crisis
+
+AI Character Prompt
+
+Bertram Garris, small-city American mayor in his 50s, short to average height, plump build, pink well-fed face, thinning hair neatly combed. Wears a conservative 1950s business suit with tie. Expression often confident in ordinary circumstances but confused and anxious when confronted with extraordinary events.
+
+Key Visual Traits
+
+Round face
+
+Slightly pompous
+
+Well-dressed civic official
+
+Narrative Signal
+Represents normal civic leadership suddenly confronted with unimaginable science

@@ -1,0 +1,19 @@
+Role: Protagonist, atomic physicist at the Industrial Research Laboratories
+Personality: Analytical, restrained, rational under pressure, introspective
+
+AI Character Prompt
+
+John Kenniston, American scientist in his late 30s or early 40s, lean build, intelligent and thoughtful face, short dark hair neatly combed with a conservative side part, clean-shaven, calm serious expression. Wears 1950s working professional clothing: white button-down shirt with sleeves rolled to the forearms, narrow dark tie slightly loosened, suspenders, high-waisted trousers, worn leather work shoes. Carries himself with quiet determination and curiosity. Appearance of a practical industrial researcher rather than a glamorous scientist. Subtle fatigue and concern in his eyes.
+
+Key Visual Traits
+
+Tallish, lean
+
+Clean, precise grooming
+
+Practical clothing
+
+Calm demeanor
+
+Narrative Signal
+He is the first person to realize something is terribly wrong when the sun changes after the atomic flash.

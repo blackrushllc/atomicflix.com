@@ -1,0 +1,9 @@
+Role: Carol’s aunt
+Personality: Domestic, caring, worried about normal things
+
+AI Character Prompt
+
+Mrs. Adams, kindly middle-aged American woman, stout build, soft features, practical hairstyle typical of the 1950s. Wears a house dress and apron. She appears gentle and domestic, concerned with ordinary household matters even as the world begins to collapse.
+
+Narrative Signal
+Her worries about protecting the garden from frost highlight the contrast between normal life and the catastrophe
