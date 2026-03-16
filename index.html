@@ -39,22 +39,34 @@
 
         <section class="content-row" id="featured-row">
             <h2>Featured Stories</h2>
-            <div class="cards-container" id="featured-container">
-                <!-- Featured items injected here -->
+            <div class="row-wrapper">
+                <button class="scroll-btn prev" aria-label="Scroll left">&lsaquo;</button>
+                <div class="cards-container" id="featured-container">
+                    <!-- Featured items injected here -->
+                </div>
+                <button class="scroll-btn next" aria-label="Scroll right">&rsaquo;</button>
             </div>
         </section>
 
         <section class="content-row" id="series">
             <h2>Serialized Stories</h2>
-            <div class="cards-container" id="series-container">
-                <!-- Series items injected here -->
+            <div class="row-wrapper">
+                <button class="scroll-btn prev" aria-label="Scroll left">&lsaquo;</button>
+                <div class="cards-container" id="series-container">
+                    <!-- Series items injected here -->
+                </div>
+                <button class="scroll-btn next" aria-label="Scroll right">&rsaquo;</button>
             </div>
         </section>
 
         <section class="content-row" id="blitz">
             <h2>Blitz</h2>
-            <div class="cards-container" id="blitz-container">
-                <!-- Blitz items injected here -->
+            <div class="row-wrapper">
+                <button class="scroll-btn prev" aria-label="Scroll left">&lsaquo;</button>
+                <div class="cards-container" id="blitz-container">
+                    <!-- Blitz items injected here -->
+                </div>
+                <button class="scroll-btn next" aria-label="Scroll right">&rsaquo;</button>
             </div>
         </section>
     </main>
@@ -69,7 +81,7 @@
 
     <script type="module">
         import { loadLibrary, getHero, getFeaturedItems, getAllSeries, getBlitzItems, getSocialLinks } from './assets/js/data-loader.js';
-        import { initMobileMenu } from './assets/js/ui.js';
+        import { initMobileMenu, initScrollButtons } from './assets/js/ui.js';
 
         async function init() {
             initMobileMenu();
@@ -130,6 +142,9 @@
                 a.target = "_blank";
                 socialContainer.appendChild(a);
             });
+
+            // Initialize scroll buttons after content is loaded
+            initScrollButtons();
         }
 
         function createCard(item, type, label) {

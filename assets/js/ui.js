@@ -26,3 +26,53 @@ export function initMobileMenu() {
         });
     }
 }
+
+export function initScrollButtons() {
+    const wrappers = document.querySelectorAll('.row-wrapper');
+
+    wrappers.forEach(wrapper => {
+        const container = wrapper.querySelector('.cards-container');
+        const nextBtn = wrapper.querySelector('.scroll-btn.next');
+        const prevBtn = wrapper.querySelector('.scroll-btn.prev');
+
+        if (!container || !nextBtn || !prevBtn) return;
+
+        nextBtn.addEventListener('click', () => {
+            // Scroll by 80% of the visible container width
+            const scrollAmount = container.clientWidth * 0.8;
+            container.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+        });
+
+        prevBtn.addEventListener('click', () => {
+            const scrollAmount = container.clientWidth * 0.8;
+            container.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+        });
+
+        // Optional: Hide/Show buttons based on scroll position
+        const updateButtons = () => {
+            const scrollLeft = container.scrollLeft;
+            const maxScroll = container.scrollWidth - container.clientWidth;
+
+            // Hide/Show prev button if at the start
+            if (scrollLeft <= 5) {
+                prevBtn.style.visibility = 'hidden';
+            } else {
+                prevBtn.style.visibility = 'visible';
+            }
+
+            // Hide/Show next button if at the end
+            if (scrollLeft >= maxScroll - 5) {
+                nextBtn.style.visibility = 'hidden';
+            } else {
+                nextBtn.style.visibility = 'visible';
+            }
+        };
+
+        // Update on scroll
+        container.addEventListener('scroll', updateButtons);
+        // Initial check
+        setTimeout(updateButtons, 100);
+        // Update on window resize
+        window.addEventListener('resize', updateButtons);
+    });
+}

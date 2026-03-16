@@ -71,7 +71,7 @@
           "description": "The truth widens as the town’s survivors discover they have not merely been moved, but cast into an age beyond imagination.",
           "runtime": "07:18",
           "thumbnail": "assets/thumbnails/city-at-worlds-end/ch02.jpg",
-          "video": "https://atomicflix.sfo3.cdn.digitaloceanspaces.com/city/The%20City%20Recap%20Chapter%202b.mp4",
+          "video": "https://atomicflix.sfo3.cdn.digitaloceanspaces.com/city/The%20City%20Recap%20Chapter%202c.mp4",
           "posterFrame": "assets/thumbnails/city-at-worlds-end/ch02.jpg",
           "airLabel": "Chapter 2",
           "isPublished": true
@@ -107,9 +107,33 @@
           "description": "The first morning after the cataclysm, the town has froze in place and the people are starting to panic.",
           "runtime": "7:41",
           "thumbnail": "assets/thumbnails/city-at-worlds-end/ch05.jpg",
-          "video": "https://atomicflix.sfo3.cdn.digitaloceanspaces.com/city/The%20City%20Recap%20Chapter%205.mp4",
+          "video": "https://atomicflix.sfo3.cdn.digitaloceanspaces.com/city/The%20City%20Recap%20Chapter%205a.mp4",
           "posterFrame": "assets/thumbnails/city-at-worlds-end/ch05.jpg",
           "airLabel": "Chapter 5",
+          "isPublished": true
+        },
+        {
+          "id": "chapter-6",
+          "number": 6,
+          "title": "Caravan into Tomorrow\n\n",
+          "description": "The survivors set out on a desperate journey across the dead earth, seeking refuge in the distant city that may hold the key to their survival.",
+          "runtime": "10:31",
+          "thumbnail": "assets/thumbnails/city-at-worlds-end/ch06.jpg",
+          "video": "https://atomicflix.sfo3.cdn.digitaloceanspaces.com/city/The%20City%20Recap%20Chapter%206.mp4",
+          "posterFrame": "assets/thumbnails/city-at-worlds-end/ch06.jpg",
+          "airLabel": "Chapter 6",
+          "isPublished": true
+        },
+        {
+          "id": "chapter-7",
+          "number": 7,
+          "title": "Under the Dome\n\n",
+          "description": "The survivors find themselves trapped under a mysterious dome, where they must confront the strange forces that govern their new world and fight for their survival.",
+          "runtime": "10:31",
+          "thumbnail": "assets/thumbnails/city-at-worlds-end/ch07.jpg",
+          "video": "",
+          "posterFrame": "assets/thumbnails/city-at-worlds-end/ch07.jpg",
+          "airLabel": "Chapter 7",
           "isPublished": true
         }
       ]
@@ -265,6 +289,19 @@
       "isPublished": true
     },
     {
+      "id": "cosmonascence-on-christ",
+      "title": "On Christ",
+      "creator": "AtomicFlix",
+      "description": "A cosmic meditation on generative reality through the lens of Christ as a cosmic figure.",
+      "thumbnail": "assets/posters/cosmonascence-on-christ/cover.jpg",
+      "video": "https://atomicflix.sfo3.cdn.digitaloceanspaces.com/city/COSMONACENSE-ON-CHRIST.mp4",
+      "runtime": "02:53",
+      "tags": ["Science Essay", "Physics", "Blitz"],
+      "featured": false,
+      "sortOrder": 4,
+      "isPublished": true
+    },
+    {
       "id": "courage-vampire-mystery",
       "title": "Courage The Cowardly Dog - The Vampire Muriel Mystery",
       "creator": "Cartoon Network",
@@ -274,7 +311,7 @@
       "runtime": "58:07",
       "tags": ["Animation", "Courage the Cowardly Dog", "Blitz"],
       "featured": false,
-      "sortOrder": 4,
+      "sortOrder": 5,
       "isPublished": true
     }
   ],
