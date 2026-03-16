@@ -19,7 +19,7 @@
     {
       "type": "series",
       "id": "city-at-worlds-end",
-      "label": "Featured Serial",
+      "label": "Season 1",
       "reason": "Our flagship retro serial"
     },
     {
@@ -47,8 +47,8 @@
       "banner": "assets/banners/city-at-worlds-end/cover.jpg",
       "tags": ["Time Displacement", "Far Future", "Cosmic Ruins"],
       "genre": "Science Fiction",
-      "status": "ongoing",
-      "chapterCount": 3,
+      "status": "complete",
+      "chapterCount": 9,
       "featured": true,
       "sortOrder": 1,
       "chapters": [
@@ -134,6 +134,30 @@
           "video": "https://atomicflix.sfo3.cdn.digitaloceanspaces.com/city/City%20Recap%20Chapter%207.mp4",
           "posterFrame": "assets/thumbnails/city-at-worlds-end/ch07.jpg",
           "airLabel": "Chapter 7",
+          "isPublished": true
+        },
+        {
+          "id": "chapter-8",
+          "number": 8,
+          "title": "Middletown Calling!\n\n",
+          "description": "The survivors explore mysterious dome only to uncover strange technology and alien mysteries",
+          "runtime": "8:31",
+          "thumbnail": "assets/thumbnails/city-at-worlds-end/ch08.jpg",
+          "video": "https://atomicflix.sfo3.cdn.digitaloceanspaces.com/city/The%20City%20Recap%20Chapter%208.mp4",
+          "posterFrame": "assets/thumbnails/city-at-worlds-end/ch08.jpg",
+          "airLabel": "Chapter 8",
+          "isPublished": true
+        },
+        {
+          "id": "chapter-9",
+          "number": 9,
+          "title": "Out of the Silence\n\n",
+          "description": "New Middletown struggles to maintain a fragile new life under the dome when suddenly everything changes.",
+          "runtime": "9:26",
+          "thumbnail": "assets/thumbnails/city-at-worlds-end/ch09.jpg",
+          "video": "https://atomicflix.sfo3.cdn.digitaloceanspaces.com/city/The%20City%20Recap%20Chapter%209.mp4",
+          "posterFrame": "assets/thumbnails/city-at-worlds-end/ch09.jpg",
+          "airLabel": "Chapter 9",
           "isPublished": true
         }
       ]
