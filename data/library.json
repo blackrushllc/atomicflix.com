@@ -71,7 +71,7 @@
           "description": "The truth widens as the town’s survivors discover they have not merely been moved, but cast into an age beyond imagination.",
           "runtime": "07:18",
           "thumbnail": "assets/thumbnails/city-at-worlds-end/ch02.jpg",
-          "video": "https://atomicflix.sfo3.cdn.digitaloceanspaces.com/city/The%20City%20Recap%20Chapter%202a.mp4",
+          "video": "https://atomicflix.sfo3.cdn.digitaloceanspaces.com/city/The%20City%20Recap%20Chapter%202b.mp4",
           "posterFrame": "assets/thumbnails/city-at-worlds-end/ch02.jpg",
           "airLabel": "Chapter 2",
           "isPublished": true
@@ -98,6 +98,18 @@
           "video": "https://atomicflix.sfo3.cdn.digitaloceanspaces.com/city/The%20City%20Recap%20Chapter%204.mp4",
           "posterFrame": "assets/thumbnails/city-at-worlds-end/ch04.jpg",
           "airLabel": "Chapter 4",
+          "isPublished": true
+        },
+        {
+          "id": "chapter-5",
+          "number": 5,
+          "title": "In the Red Dawn\n\n",
+          "description": "The first morning after the cataclysm, the town has froze in place and the people are starting to panic.",
+          "runtime": "7:41",
+          "thumbnail": "assets/thumbnails/city-at-worlds-end/ch05.jpg",
+          "video": "https://atomicflix.sfo3.cdn.digitaloceanspaces.com/city/The%20City%20Recap%20Chapter%205.mp4",
+          "posterFrame": "assets/thumbnails/city-at-worlds-end/ch05.jpg",
+          "airLabel": "Chapter 5",
           "isPublished": true
         }
       ]
