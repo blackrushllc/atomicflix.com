@@ -24,9 +24,9 @@
     },
     {
       "type": "series",
-      "id": "two-thousand-miles-below",
+      "id": "futility",
       "label": "Classic Serial",
-      "reason": "A deep-earth pulp adventure"
+      "reason": "The Wreck of the Titan"
     },
     {
       "type": "blitz",
@@ -267,6 +267,96 @@
           "posterFrame": "assets/thumbnails/first-on-the-moon/ch03.jpg",
           "airLabel": "Chapter 3",
           "isPublished": true
+        }
+      ]
+    },
+    {
+      "id": "futility",
+      "title": "Futility: The Wreck of the Titan",
+      "author": "Morgan Robertson",
+      "sourceEra": "Guilded Age Fiction",
+      "description": "Written over a decade before the Titanic tragedy, Robertson's 1898 novella tells the prophetic tale of the Titan, an 'unsinkable' ocean liner doomed by hubris and the sea.",
+      "longDescription": "AtomicFlix presents Morgan Robertson's haunting maritime masterpiece, 'Futility'. This serialized adaptation follows the ill-fated voyage of the Titan, exploring themes of technological arrogance, survival, and the cold indifference of the Atlantic.",
+      "poster": "assets/posters/futility/cover.jpg",
+      "banner": "assets/banners/futility/cover.jpg",
+      "tags": ["Maritime", "Historical Fiction", "Prophetic"],
+      "genre": "Nautical Drama",
+      "status": "ongoing",
+      "chapterCount": 6,
+      "featured": true,
+      "sortOrder": 4,
+      "chapters": [
+        {
+          "id": "chapter-1",
+          "number": 1,
+          "title": "The Titan Ship",
+          "description": "Chapter 1 - The Titan ship and the world of the guilded age",
+          "runtime": "04:53",
+          "thumbnail": "assets/thumbnails/futility/ch01.jpg",
+          "video": "assets/video/futility/ch01.mp4",
+          "posterFrame": "assets/thumbnails/futility/ch01.jpg",
+          "airLabel": "Chapter 1",
+          "isPublished": true
+        },
+        {
+          "id": "chapter-2",
+          "number": 2,
+          "title": "Collision and Cover-up",
+          "description": "Chapters 1-4, Rowland, Myra, collision and cover-up",
+          "runtime": "00:00",
+          "thumbnail": "assets/thumbnails/futility/ch02.jpg",
+          "video": "assets/video/futility/ch02.mp4",
+          "posterFrame": "assets/thumbnails/futility/ch02.jpg",
+          "airLabel": "Chapter 2",
+          "isPublished": false
+        },
+        {
+          "id": "chapter-3",
+          "number": 3,
+          "title": "The Wreck",
+          "description": "Chapters 5-7, Chapters Rowland, the child, and the wreck",
+          "runtime": "00:00",
+          "thumbnail": "assets/thumbnails/futility/ch03.jpg",
+          "video": "assets/video/futility/ch03.mp4",
+          "posterFrame": "assets/thumbnails/futility/ch03.jpg",
+          "airLabel": "Chapter 3",
+          "isPublished": false
+        },
+        {
+          "id": "chapter-4",
+          "number": 4,
+          "title": "Survival",
+          "description": "Chapters 8-9, Survival on the iceberg",
+          "runtime": "00:00",
+          "thumbnail": "assets/thumbnails/futility/ch04.jpg",
+          "video": "assets/video/futility/ch04.mp4",
+          "posterFrame": "assets/thumbnails/futility/ch04.jpg",
+          "airLabel": "Chapter 4",
+          "isPublished": false
+        },
+        {
+          "id": "chapter-5",
+          "number": 5,
+          "title": "Aftermath",
+          "description": "Chapters 10-13, London aftermath, testimony, underwriters, consequences",
+          "runtime": "00:00",
+          "thumbnail": "assets/thumbnails/futility/ch05.jpg",
+          "video": "assets/video/futility/ch05.mp4",
+          "posterFrame": "assets/thumbnails/futility/ch05.jpg",
+          "airLabel": "Chapter 5",
+          "isPublished": false
+        },
+        {
+          "id": "chapter-6",
+          "number": 6,
+          "title": "Final Turn",
+          "description": "Chapters 14-16, Reunion, accusation, discharge, and Rowland’s final turn in life",
+          "runtime": "00:00",
+          "thumbnail": "assets/thumbnails/futility/ch06.jpg",
+          "video": "assets/video/futility/ch06.mp4",
+          "posterFrame": "assets/thumbnails/futility/ch06.jpg",
+          "airLabel": "Chapter 6",
+          "isPublished": false
         }
       ]
     }

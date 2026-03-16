@@ -117,9 +117,22 @@
             series.chapters.forEach(chapter => {
                 const row = document.createElement('div');
                 row.className = 'chapter-row';
+                
+                let thumbHtml;
+                if (!chapter.isPublished) {
+                    row.classList.add('disabled');
+                    thumbHtml = `
+                        <div class="media-placeholder" style="width: 180px; aspect-ratio: 16/9; font-size: 0.7rem;">
+                            <span>Coming Soon</span>
+                        </div>
+                    `;
+                } else {
+                    thumbHtml = `<img class="chapter-thumb" src="${chapter.thumbnail}" alt="${chapter.title}" onerror="console.error('Media missing: ${chapter.thumbnail}'); this.replaceWith(createThumbPlaceholder())">`;
+                }
+
                 row.innerHTML = `
                     <div class="chapter-thumb-wrapper" style="width: 180px; flex-shrink:0;">
-                        <img class="chapter-thumb" src="${chapter.thumbnail}" alt="${chapter.title}" onerror="console.error('Media missing: ${chapter.thumbnail}'); this.replaceWith(createThumbPlaceholder())">
+                        ${thumbHtml}
                     </div>
                     <div class="chapter-details">
                         <h3>Chapter ${chapter.number}: ${chapter.title}</h3>
@@ -127,7 +140,10 @@
                         <div class="card-meta" style="margin-top: 0.5rem;">Runtime: ${chapter.runtime}</div>
                     </div>
                 `;
-                row.onclick = () => window.location.href = `watch.html?series=${series.id}&chapter=${chapter.number}`;
+                
+                if (chapter.isPublished) {
+                    row.onclick = () => window.location.href = `watch.html?series=${series.id}&chapter=${chapter.number}`;
+                }
                 chaptersContainer.appendChild(row);
             });
         }
