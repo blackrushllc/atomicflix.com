@@ -119,7 +119,7 @@
     </main>
 
     <script type="module">
-        import { loadLibrary, getSeriesById, getChapterBySeriesAndNumber, getNextChapter, getPreviousChapter, getBlitzById } from './assets/js/data-loader.js';
+        import { loadLibrary, getSeriesById, getChapterBySeriesAndNumber, getNextChapter, getPreviousChapter, getBlitzById, getSiteMeta } from './assets/js/data-loader.js';
         import { initMobileMenu } from './assets/js/ui.js';
 
         let countdownInterval;
@@ -177,8 +177,8 @@
             document.getElementById('back-link').href = backUrl;
             document.getElementById('back-link').textContent = `← Back to ${series.title}`;
             document.getElementById('list-btn').href = backUrl;
-
-            setupPlayer(chapter.video, chapter.thumbnail, chapter.videoType || 'native');
+            
+            setupPlayer(chapter.video, chapter.thumbnail, chapter.videoType || 'native', chapter.playbackSpeed);
             setupNavigation(seriesId, chapter.number);
             
             // Update Share Data & Meta
@@ -217,7 +217,7 @@
             document.getElementById('prev-btn').style.display = 'none';
             document.getElementById('next-btn').style.display = 'none';
 
-            setupPlayer(blitz.video, blitz.thumbnail, blitz.videoType || 'native');
+            setupPlayer(blitz.video, blitz.thumbnail, blitz.videoType || 'native', blitz.playbackSpeed);
 
             // Update Share Data & Meta
             shareData = {
@@ -315,9 +315,15 @@
             }
         }
 
-        function setupPlayer(videoUrl, posterUrl, videoType = 'native') {
+        function setupPlayer(videoUrl, posterUrl, videoType = 'native', speed = null) {
             const videoArea = document.getElementById('video-area');
             let player = document.getElementById('player');
+
+            // Determine playback speed
+            const siteMeta = getSiteMeta();
+            const defaultSpeed = siteMeta.defaultPlaybackSpeed !== undefined ? siteMeta.defaultPlaybackSpeed : 0;
+            const speedToUse = (speed !== null && speed !== undefined) ? speed : defaultSpeed;
+            const playbackRate = (speedToUse === 0 || speedToUse === "0") ? 1.0 : parseFloat(speedToUse);
 
             if (videoType === 'youtube') {
                 if (player && player.tagName === 'VIDEO') {
@@ -378,6 +384,9 @@
                 `;
             };
 
+            // Apply playback rate
+            player.playbackRate = playbackRate;
+
             player.onended = () => {
                 const params = new URLSearchParams(window.location.search);
                 const seriesId = params.get('series');
@@ -416,6 +425,9 @@
                 if (savedTime && parseFloat(savedTime) < player.duration - 10) {
                     player.currentTime = parseFloat(savedTime);
                 }
+                
+                // Ensure playback rate is maintained after load
+                player.playbackRate = playbackRate;
             };
 
             player.load();

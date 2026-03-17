@@ -5,7 +5,8 @@
     "description": "A niche streaming home for classic science-fiction serials, one-off adaptations, and cosmic curiosities.",
     "logoText": "AtomicFlix",
     "theme": "retro-futurist-streaming",
-    "version": "0.1.0"
+    "version": "0.1.0",
+    "defaultPlaybackSpeed": 0
   },
   "hero": {
     "featuredSeriesId": "city-at-worlds-end",
@@ -45,7 +46,11 @@
       "longDescription": "AtomicFlix presents a serialized adaptation of Edmond Hamilton’s sweeping end-of-time adventure, blending mystery, wonder, and stark cosmic scale.",
       "poster": "assets/posters/city-at-worlds-end/cover.jpg",
       "banner": "assets/banners/city-at-worlds-end/cover.jpg",
-      "tags": ["Time Displacement", "Far Future", "Cosmic Ruins"],
+      "tags": [
+        "Time Displacement",
+        "Far Future",
+        "Cosmic Ruins"
+      ],
       "genre": "Science Fiction",
       "status": "complete",
       "chapterCount": 9,
@@ -62,7 +67,8 @@
           "video": "https://atomicflix.sfo3.cdn.digitaloceanspaces.com/city/The%20City%20Recap%20Chapter%201.mp4",
           "posterFrame": "assets/thumbnails/city-at-worlds-end/ch01.jpg",
           "airLabel": "Episode 1",
-          "isPublished": true
+          "isPublished": true,
+          "playbackSpeed": 1.0
         },
         {
           "id": "chapter-2",
@@ -74,7 +80,8 @@
           "video": "https://atomicflix.sfo3.cdn.digitaloceanspaces.com/city/The%20City%20Recap%20Chapter%202c.mp4",
           "posterFrame": "assets/thumbnails/city-at-worlds-end/ch02.jpg",
           "airLabel": "Episode 2",
-          "isPublished": true
+          "isPublished": true,
+          "playbackSpeed": 1.0
         },
         {
           "id": "chapter-3",
@@ -86,7 +93,8 @@
           "video": "https://atomicflix.sfo3.cdn.digitaloceanspaces.com/city/The%20City%20Recap%20Chapter%203.mp4",
           "posterFrame": "assets/thumbnails/city-at-worlds-end/ch03.jpg",
           "airLabel": "Episode 3",
-          "isPublished": true
+          "isPublished": true,
+          "playbackSpeed": 1.0
         },
         {
           "id": "chapter-4",
@@ -98,7 +106,8 @@
           "video": "https://atomicflix.sfo3.cdn.digitaloceanspaces.com/city/The%20City%20Recap%20Chapter%204.mp4",
           "posterFrame": "assets/thumbnails/city-at-worlds-end/ch04.jpg",
           "airLabel": "Episode 4",
-          "isPublished": true
+          "isPublished": true,
+          "playbackSpeed": 1.0
         },
         {
           "id": "chapter-5",
@@ -110,7 +119,8 @@
           "video": "https://atomicflix.sfo3.cdn.digitaloceanspaces.com/city/The%20City%20Recap%20Chapter%205a.mp4",
           "posterFrame": "assets/thumbnails/city-at-worlds-end/ch05.jpg",
           "airLabel": "Episode 5",
-          "isPublished": true
+          "isPublished": true,
+          "playbackSpeed": 1.0
         },
         {
           "id": "chapter-6",
@@ -122,7 +132,8 @@
           "video": "https://atomicflix.sfo3.cdn.digitaloceanspaces.com/city/The%20City%20Recap%20Chapter%206.mp4",
           "posterFrame": "assets/thumbnails/city-at-worlds-end/ch06.jpg",
           "airLabel": "Episode 6",
-          "isPublished": true
+          "isPublished": true,
+          "playbackSpeed": 1.0
         },
         {
           "id": "chapter-7",
@@ -134,7 +145,8 @@
           "video": "https://atomicflix.sfo3.cdn.digitaloceanspaces.com/city/City%20Recap%20Chapter%207.mp4",
           "posterFrame": "assets/thumbnails/city-at-worlds-end/ch07.jpg",
           "airLabel": "Episode 7",
-          "isPublished": true
+          "isPublished": true,
+          "playbackSpeed": 1.0
         },
         {
           "id": "chapter-8",
@@ -146,7 +158,8 @@
           "video": "https://atomicflix.sfo3.cdn.digitaloceanspaces.com/city/The%20City%20Recap%20Chapter%208.mp4",
           "posterFrame": "assets/thumbnails/city-at-worlds-end/ch08.jpg",
           "airLabel": "Episode 8",
-          "isPublished": true
+          "isPublished": true,
+          "playbackSpeed": 1.0
         },
         {
           "id": "chapter-9",
@@ -158,7 +171,8 @@
           "video": "https://atomicflix.sfo3.cdn.digitaloceanspaces.com/city/The%20City%20Recap%20Chapter%209.mp4",
           "posterFrame": "assets/thumbnails/city-at-worlds-end/ch09.jpg",
           "airLabel": "Episode 9",
-          "isPublished": true
+          "isPublished": true,
+          "playbackSpeed": 1.0
         }
       ]
     },
@@ -171,7 +185,11 @@
       "longDescription": "A subterranean serial of peril, discovery, and classic magazine-era wonder.",
       "poster": "assets/posters/two-thousand-miles-below/cover.jpg",
       "banner": "assets/banners/two-thousand-miles-below/cover.jpg",
-      "tags": ["Underground World", "Adventure", "Pulp"],
+      "tags": [
+        "Underground World",
+        "Adventure",
+        "Pulp"
+      ],
       "genre": "Science Fiction Adventure",
       "status": "coming soon",
       "chapterCount": 3,
@@ -188,7 +206,8 @@
           "video": "assets/video/two-thousand-miles-below/ch01.mp4",
           "posterFrame": "assets/thumbnails/two-thousand-miles-below/ch01.jpg",
           "airLabel": "Episode 1",
-          "isPublished": true
+          "isPublished": true,
+          "playbackSpeed": 1.0
         },
         {
           "id": "chapter-2",
@@ -200,7 +219,8 @@
           "video": "assets/video/two-thousand-miles-below/ch02.mp4",
           "posterFrame": "assets/thumbnails/two-thousand-miles-below/ch02.jpg",
           "airLabel": "Episode 2",
-          "isPublished": true
+          "isPublished": true,
+          "playbackSpeed": 1.0
         },
         {
           "id": "chapter-3",
@@ -212,7 +232,8 @@
           "video": "assets/video/two-thousand-miles-below/ch03.mp4",
           "posterFrame": "assets/thumbnails/two-thousand-miles-below/ch03.jpg",
           "airLabel": "Episode 3",
-          "isPublished": true
+          "isPublished": true,
+          "playbackSpeed": 1.0
         }
       ]
     },
@@ -225,7 +246,11 @@
       "longDescription": "A sleek atomic-age journey to the moon, serialized for modern binge watching.",
       "poster": "assets/posters/first-on-the-moon/cover.jpg",
       "banner": "assets/banners/first-on-the-moon/cover.jpg",
-      "tags": ["Moon Voyage", "Space Race", "Exploration"],
+      "tags": [
+        "Moon Voyage",
+        "Space Race",
+        "Exploration"
+      ],
       "genre": "Space Adventure",
       "status": "coming soon",
       "chapterCount": 3,
@@ -242,7 +267,8 @@
           "video": "assets/video/first-on-the-moon/ch01.mp4",
           "posterFrame": "assets/thumbnails/first-on-the-moon/ch01.jpg",
           "airLabel": "Episode 1",
-          "isPublished": true
+          "isPublished": true,
+          "playbackSpeed": 1.0
         },
         {
           "id": "chapter-2",
@@ -254,7 +280,8 @@
           "video": "assets/video/first-on-the-moon/ch02.mp4",
           "posterFrame": "assets/thumbnails/first-on-the-moon/ch02.jpg",
           "airLabel": "Episode 2",
-          "isPublished": true
+          "isPublished": true,
+          "playbackSpeed": 1.0
         },
         {
           "id": "chapter-3",
@@ -266,7 +293,8 @@
           "video": "assets/video/first-on-the-moon/ch03.mp4",
           "posterFrame": "assets/thumbnails/first-on-the-moon/ch03.jpg",
           "airLabel": "Episode 3",
-          "isPublished": true
+          "isPublished": true,
+          "playbackSpeed": 1.0
         }
       ]
     },
@@ -279,7 +307,11 @@
       "longDescription": "AtomicFlix presents Morgan Robertson's haunting maritime masterpiece, 'Futility'. This serialized adaptation follows the ill-fated voyage of the Titan, exploring themes of technological arrogance, survival, and the cold indifference of the Atlantic.",
       "poster": "assets/posters/futility/cover.jpg",
       "banner": "assets/banners/futility/cover.jpg",
-      "tags": ["Maritime", "Historical Fiction", "Prophetic"],
+      "tags": [
+        "Maritime",
+        "Historical Fiction",
+        "Prophetic"
+      ],
       "genre": "Nautical Drama",
       "status": "complete",
       "chapterCount": 6,
@@ -296,7 +328,8 @@
           "video": "https://atomicflix.sfo3.cdn.digitaloceanspaces.com/city/Futility%20Chapter%201.mp4",
           "posterFrame": "assets/thumbnails/futility/ch01.jpg",
           "airLabel": "Episode 1",
-          "isPublished": true
+          "isPublished": true,
+          "playbackSpeed": 1.0
         },
         {
           "id": "chapter-2",
@@ -308,7 +341,8 @@
           "video": "https://atomicflix.sfo3.cdn.digitaloceanspaces.com/city/Futility%20Episode%202.mp4",
           "posterFrame": "assets/thumbnails/futility/ch02.jpg",
           "airLabel": "Episode 2",
-          "isPublished": true
+          "isPublished": true,
+          "playbackSpeed": 1.0
         },
         {
           "id": "chapter-3",
@@ -320,7 +354,8 @@
           "video": "https://atomicflix.sfo3.cdn.digitaloceanspaces.com/city/Futility%20Episode%203.mp4",
           "posterFrame": "assets/thumbnails/futility/ch03.jpg",
           "airLabel": "Episode 3",
-          "isPublished": true
+          "isPublished": true,
+          "playbackSpeed": 1.0
         },
         {
           "id": "chapter-4",
@@ -332,7 +367,8 @@
           "video": "https://atomicflix.sfo3.cdn.digitaloceanspaces.com/city/Futility%20Episode%204.mp4",
           "posterFrame": "assets/thumbnails/futility/ch04.jpg",
           "airLabel": "Episode 4",
-          "isPublished": true
+          "isPublished": true,
+          "playbackSpeed": 1.0
         },
         {
           "id": "chapter-5",
@@ -344,7 +380,8 @@
           "video": "https://atomicflix.sfo3.cdn.digitaloceanspaces.com/city/Futility%20Episode%205.mp4",
           "posterFrame": "assets/thumbnails/futility/ch05.jpg",
           "airLabel": "Episode 5",
-          "isPublished": true
+          "isPublished": true,
+          "playbackSpeed": 1.0
         }
       ]
     }
@@ -359,10 +396,15 @@
       "video": "https://www.youtube.com/embed/jwt95rW_idI?si=bJ3EYpV_V2u118g-",
       "videoType": "youtube",
       "runtime": "57:16",
-      "tags": ["Cosmic Horror", "Blitz", "Guest Feature"],
+      "tags": [
+        "Cosmic Horror",
+        "Blitz",
+        "Guest Feature"
+      ],
       "featured": true,
       "sortOrder": 1,
-      "isPublished": true
+      "isPublished": true,
+      "playbackSpeed": 1.0
     },
     {
       "id": "cosmonascence",
@@ -372,10 +414,15 @@
       "thumbnail": "assets/posters/cosmonascence/cover.jpg",
       "video": "https://atomicflix.sfo3.cdn.digitaloceanspaces.com/city/Cosmogenesis.mp4",
       "runtime": "09:35",
-      "tags": ["Cosmic Essay", "Philosophy", "Blitz"],
+      "tags": [
+        "Cosmic Essay",
+        "Philosophy",
+        "Blitz"
+      ],
       "featured": true,
       "sortOrder": 2,
-      "isPublished": true
+      "isPublished": true,
+      "playbackSpeed": 1.0
     },
     {
       "id": "speed-of-light",
@@ -385,10 +432,15 @@
       "thumbnail": "assets/posters/speed-of-light/cover.jpg",
       "video": "https://atomicflix.sfo3.cdn.digitaloceanspaces.com/city/The%20Speed%20of%20Light.mp4",
       "runtime": "02:53",
-      "tags": ["Science Essay", "Physics", "Blitz"],
+      "tags": [
+        "Science Essay",
+        "Physics",
+        "Blitz"
+      ],
       "featured": false,
       "sortOrder": 3,
-      "isPublished": true
+      "isPublished": true,
+      "playbackSpeed": 1.0
     },
     {
       "id": "cosmonascence-on-christ",
@@ -398,10 +450,15 @@
       "thumbnail": "assets/posters/cosmonascence-on-christ/cover.jpg",
       "video": "https://atomicflix.sfo3.cdn.digitaloceanspaces.com/city/COSMONACENSE-ON-CHRIST.mp4",
       "runtime": "02:53",
-      "tags": ["Science Essay", "Physics", "Blitz"],
+      "tags": [
+        "Science Essay",
+        "Physics",
+        "Blitz"
+      ],
       "featured": false,
       "sortOrder": 4,
-      "isPublished": true
+      "isPublished": true,
+      "playbackSpeed": 1.0
     },
     {
       "id": "courage-vampire-mystery",
@@ -411,10 +468,15 @@
       "thumbnail": "assets/posters/courage-vampire-mystery/cover.jpg",
       "video": "https://atomicflix.sfo3.cdn.digitaloceanspaces.com/city/Courage_The_Cowardly_Dog_-_The_Vampire_Muriel_Mystery.webm",
       "runtime": "58:07",
-      "tags": ["Animation", "Courage the Cowardly Dog", "Blitz"],
+      "tags": [
+        "Animation",
+        "Courage the Cowardly Dog",
+        "Blitz"
+      ],
       "featured": false,
       "sortOrder": 5,
-      "isPublished": true
+      "isPublished": true,
+      "playbackSpeed": 1.0
     }
   ],
   "social": [
@@ -469,7 +531,8 @@
       "Vibe Coding - Jetbrains Junie Ultimate",
       "Backend - BasilBASIC",
       "Web and CDN/S3/RDS MySQL Hosting - Digital Ocean",
-      "Server", "Ubuntu 24.04.3 LTS",
+      "Server",
+      "Ubuntu 24.04.3 LTS",
       "Certificated SSL - Let's Encrypt (certbot)",
       "Source Repo - github.com/blackrushllc/atomicflix.com",
       "Voice Acting - Me LOL",

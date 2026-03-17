@@ -46,6 +46,7 @@ Everything is driven by `data/library.json`.
 2. Required fields: `id` (URL-safe), `title`, `author`, `description`, `poster`, `banner`, `chapters`.
 3. Update `chapterCount` to match the number of chapters.
 4. Add assets to `/assets/posters/ID/` and `/assets/banners/ID/`.
+5. Optional: Add `playbackSpeed` (default is 0 for normal speed, e.g., 1.3, 2.0).
 
 ### Adding a New Chapter
 
@@ -53,11 +54,18 @@ Everything is driven by `data/library.json`.
 2. Fields: `number`, `title`, `description`, `runtime`, `thumbnail`, `video`.
 3. Ensure `isPublished` is set to `true`.
 4. Update the parent series `"chapterCount"`.
+5. Optional: Add `playbackSpeed` (default is 0 for normal speed, e.g., 1.3, 2.0).
 
 ### Adding a Blitz Video
 
 1. Add a new object to the `"blitz"` array.
 2. Required fields: `id`, `title`, `creator`, `description`, `thumbnail`, `video`, `runtime`.
+3. Optional: Add `playbackSpeed` (default is 0 for normal speed, e.g., 1.3, 2.0).
+
+### Global Speed Setting
+
+1. Set `defaultPlaybackSpeed` in the `"site"` object in `library.json`.
+2. Use 0 for normal speed, or a value like 1.3 for a faster default across all videos.
 
 ## Routing & Query Parameters
 
