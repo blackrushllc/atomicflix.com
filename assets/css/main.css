@@ -425,6 +425,7 @@ video, iframe {
 
 .watch-meta {
     margin-top: 1rem;
+    position: relative;
 }
 
 .watch-meta h1 {
@@ -444,6 +445,122 @@ video, iframe {
 
 .watch-context-line .separator {
     color: var(--text-muted);
+}
+
+.btn-share {
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.1);
+    color: var(--text-main);
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-family: var(--font-main);
+    font-size: 0.9rem;
+    transition: 0.3s;
+    margin-left: auto;
+}
+
+.btn-share:hover {
+    background: rgba(255,255,255,0.1);
+    border-color: var(--accent-secondary);
+    box-shadow: 0 0 10px var(--accent-glow);
+}
+
+.share-menu {
+    position: absolute;
+    background: var(--bg-card);
+    border: 1px solid #333;
+    border-radius: 8px;
+    padding: 1.5rem;
+    z-index: 1000;
+    width: 320px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    margin-top: 0.5rem;
+    right: 0;
+}
+
+.share-menu-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.share-menu-header h3 {
+    font-size: 1.1rem;
+    color: var(--text-main);
+}
+
+#close-share-btn {
+    background: none;
+    border: none;
+    color: var(--text-muted);
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.share-options {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+.share-option {
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.1);
+    color: var(--text-main);
+    padding: 1rem 0.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.8rem;
+    transition: 0.3s;
+}
+
+.share-option:hover {
+    background: rgba(255,255,255,0.1);
+    border-color: var(--accent-secondary);
+}
+
+.share-option svg {
+    color: var(--accent-secondary);
+}
+
+.share-toast {
+    position: absolute;
+    bottom: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--accent-secondary);
+    color: var(--bg-dark);
+    padding: 0.4rem 1rem;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    white-space: nowrap;
+    animation: fadeInUp 0.3s ease-out;
+}
+
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translate(-50%, 10px); }
+    to { opacity: 1; transform: translate(-50%, 0); }
+}
+
+@media (max-width: 768px) {
+    .share-menu {
+        width: calc(100% - 2rem);
+        left: 1rem;
+        right: 1rem;
+        position: fixed;
+        bottom: 2rem;
+        margin-top: 0;
+    }
 }
 
 .watch-nav {

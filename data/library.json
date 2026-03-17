@@ -13,7 +13,7 @@
     "subheadline": "Classic futures, restored and re-serialized for modern screens.",
     "backgroundImage": "assets/banners/city-at-worlds-end/cover.jpg",
     "primaryCtaLabel": "Watch Now",
-    "secondaryCtaLabel": "Browse Chapters"
+    "secondaryCtaLabel": "Browse Episodes"
   },
   "featured": [
     {
@@ -61,7 +61,7 @@
           "thumbnail": "assets/thumbnails/city-at-worlds-end/ch01.jpg",
           "video": "https://atomicflix.sfo3.cdn.digitaloceanspaces.com/city/The%20City%20Recap%20Chapter%201.mp4",
           "posterFrame": "assets/thumbnails/city-at-worlds-end/ch01.jpg",
-          "airLabel": "Chapter 1",
+          "airLabel": "Episode 1",
           "isPublished": true
         },
         {
@@ -73,7 +73,7 @@
           "thumbnail": "assets/thumbnails/city-at-worlds-end/ch02.jpg",
           "video": "https://atomicflix.sfo3.cdn.digitaloceanspaces.com/city/The%20City%20Recap%20Chapter%202c.mp4",
           "posterFrame": "assets/thumbnails/city-at-worlds-end/ch02.jpg",
-          "airLabel": "Chapter 2",
+          "airLabel": "Episode 2",
           "isPublished": true
         },
         {
@@ -85,7 +85,7 @@
           "thumbnail": "assets/thumbnails/city-at-worlds-end/ch03.jpg",
           "video": "https://atomicflix.sfo3.cdn.digitaloceanspaces.com/city/The%20City%20Recap%20Chapter%203.mp4",
           "posterFrame": "assets/thumbnails/city-at-worlds-end/ch03.jpg",
-          "airLabel": "Chapter 3",
+          "airLabel": "Episode 3",
           "isPublished": true
         },
         {
@@ -97,7 +97,7 @@
           "thumbnail": "assets/thumbnails/city-at-worlds-end/ch04.jpg",
           "video": "https://atomicflix.sfo3.cdn.digitaloceanspaces.com/city/The%20City%20Recap%20Chapter%204.mp4",
           "posterFrame": "assets/thumbnails/city-at-worlds-end/ch04.jpg",
-          "airLabel": "Chapter 4",
+          "airLabel": "Episode 4",
           "isPublished": true
         },
         {
@@ -109,7 +109,7 @@
           "thumbnail": "assets/thumbnails/city-at-worlds-end/ch05.jpg",
           "video": "https://atomicflix.sfo3.cdn.digitaloceanspaces.com/city/The%20City%20Recap%20Chapter%205a.mp4",
           "posterFrame": "assets/thumbnails/city-at-worlds-end/ch05.jpg",
-          "airLabel": "Chapter 5",
+          "airLabel": "Episode 5",
           "isPublished": true
         },
         {
@@ -121,7 +121,7 @@
           "thumbnail": "assets/thumbnails/city-at-worlds-end/ch06.jpg",
           "video": "https://atomicflix.sfo3.cdn.digitaloceanspaces.com/city/The%20City%20Recap%20Chapter%206.mp4",
           "posterFrame": "assets/thumbnails/city-at-worlds-end/ch06.jpg",
-          "airLabel": "Chapter 6",
+          "airLabel": "Episode 6",
           "isPublished": true
         },
         {
@@ -133,7 +133,7 @@
           "thumbnail": "assets/thumbnails/city-at-worlds-end/ch07.jpg",
           "video": "https://atomicflix.sfo3.cdn.digitaloceanspaces.com/city/City%20Recap%20Chapter%207.mp4",
           "posterFrame": "assets/thumbnails/city-at-worlds-end/ch07.jpg",
-          "airLabel": "Chapter 7",
+          "airLabel": "Episode 7",
           "isPublished": true
         },
         {
@@ -145,7 +145,7 @@
           "thumbnail": "assets/thumbnails/city-at-worlds-end/ch08.jpg",
           "video": "https://atomicflix.sfo3.cdn.digitaloceanspaces.com/city/The%20City%20Recap%20Chapter%208.mp4",
           "posterFrame": "assets/thumbnails/city-at-worlds-end/ch08.jpg",
-          "airLabel": "Chapter 8",
+          "airLabel": "Episode 8",
           "isPublished": true
         },
         {
@@ -157,7 +157,7 @@
           "thumbnail": "assets/thumbnails/city-at-worlds-end/ch09.jpg",
           "video": "https://atomicflix.sfo3.cdn.digitaloceanspaces.com/city/The%20City%20Recap%20Chapter%209.mp4",
           "posterFrame": "assets/thumbnails/city-at-worlds-end/ch09.jpg",
-          "airLabel": "Chapter 9",
+          "airLabel": "Episode 9",
           "isPublished": true
         }
       ]
@@ -187,7 +187,7 @@
           "thumbnail": "assets/thumbnails/two-thousand-miles-below/ch01.jpg",
           "video": "assets/video/two-thousand-miles-below/ch01.mp4",
           "posterFrame": "assets/thumbnails/two-thousand-miles-below/ch01.jpg",
-          "airLabel": "Chapter 1",
+          "airLabel": "Episode 1",
           "isPublished": true
         },
         {
@@ -199,7 +199,7 @@
           "thumbnail": "assets/thumbnails/two-thousand-miles-below/ch02.jpg",
           "video": "assets/video/two-thousand-miles-below/ch02.mp4",
           "posterFrame": "assets/thumbnails/two-thousand-miles-below/ch02.jpg",
-          "airLabel": "Chapter 2",
+          "airLabel": "Episode 2",
           "isPublished": true
         },
         {
@@ -211,7 +211,7 @@
           "thumbnail": "assets/thumbnails/two-thousand-miles-below/ch03.jpg",
           "video": "assets/video/two-thousand-miles-below/ch03.mp4",
           "posterFrame": "assets/thumbnails/two-thousand-miles-below/ch03.jpg",
-          "airLabel": "Chapter 3",
+          "airLabel": "Episode 3",
           "isPublished": true
         }
       ]
@@ -241,7 +241,7 @@
           "thumbnail": "assets/thumbnails/first-on-the-moon/ch01.jpg",
           "video": "assets/video/first-on-the-moon/ch01.mp4",
           "posterFrame": "assets/thumbnails/first-on-the-moon/ch01.jpg",
-          "airLabel": "Chapter 1",
+          "airLabel": "Episode 1",
           "isPublished": true
         },
         {
@@ -253,7 +253,7 @@
           "thumbnail": "assets/thumbnails/first-on-the-moon/ch02.jpg",
           "video": "assets/video/first-on-the-moon/ch02.mp4",
           "posterFrame": "assets/thumbnails/first-on-the-moon/ch02.jpg",
-          "airLabel": "Chapter 2",
+          "airLabel": "Episode 2",
           "isPublished": true
         },
         {
@@ -265,7 +265,7 @@
           "thumbnail": "assets/thumbnails/first-on-the-moon/ch03.jpg",
           "video": "assets/video/first-on-the-moon/ch03.mp4",
           "posterFrame": "assets/thumbnails/first-on-the-moon/ch03.jpg",
-          "airLabel": "Chapter 3",
+          "airLabel": "Episode 3",
           "isPublished": true
         }
       ]
@@ -281,7 +281,7 @@
       "banner": "assets/banners/futility/cover.jpg",
       "tags": ["Maritime", "Historical Fiction", "Prophetic"],
       "genre": "Nautical Drama",
-      "status": "ongoing",
+      "status": "complete",
       "chapterCount": 6,
       "featured": true,
       "sortOrder": 4,
@@ -289,74 +289,62 @@
         {
           "id": "chapter-1",
           "number": 1,
-          "title": "The Titan Ship",
-          "description": "Chapter 1 - The Titan ship and the world of the guilded age",
+          "title": "The Age of Steel and Certainty",
+          "description": "In 1898, the mighty Titan embodies an age so certain of its own power that it can no longer imagine catastrophe.",
           "runtime": "04:53",
           "thumbnail": "assets/thumbnails/futility/ch01.jpg",
-          "video": "assets/video/futility/ch01.mp4",
+          "video": "https://atomicflix.sfo3.cdn.digitaloceanspaces.com/city/Futility%20Chapter%201.mp4",
           "posterFrame": "assets/thumbnails/futility/ch01.jpg",
-          "airLabel": "Chapter 1",
+          "airLabel": "Episode 1",
           "isPublished": true
         },
         {
           "id": "chapter-2",
           "number": 2,
-          "title": "Collision and Cover-up",
-          "description": "Chapters 1-4, Rowland, Myra, collision and cover-up",
+          "title": "Pride at Full Speed",
+          "description": "As the Titan races west through fog and darkness, John Rowland becomes the lone witness to a deadly crime no one aboard wants remembered.",
           "runtime": "00:00",
           "thumbnail": "assets/thumbnails/futility/ch02.jpg",
-          "video": "assets/video/futility/ch02.mp4",
+          "video": "https://atomicflix.sfo3.cdn.digitaloceanspaces.com/city/Futility%20Episode%202.mp4",
           "posterFrame": "assets/thumbnails/futility/ch02.jpg",
-          "airLabel": "Chapter 2",
-          "isPublished": false
+          "airLabel": "Episode 2",
+          "isPublished": true
         },
         {
           "id": "chapter-3",
           "number": 3,
-          "title": "The Wreck",
-          "description": "Chapters 5-7, Chapters Rowland, the child, and the wreck",
+          "title": "Ice, Fire, and Judgment",
+          "description": "When the Titan finally meets the ice, a broken sailor and a little child are left alone to face the frozen aftermath.",
           "runtime": "00:00",
           "thumbnail": "assets/thumbnails/futility/ch03.jpg",
-          "video": "assets/video/futility/ch03.mp4",
+          "video": "https://atomicflix.sfo3.cdn.digitaloceanspaces.com/city/Futility%20Episode%203.mp4",
           "posterFrame": "assets/thumbnails/futility/ch03.jpg",
-          "airLabel": "Chapter 3",
-          "isPublished": false
+          "airLabel": "Episode 3",
+          "isPublished": true
         },
         {
           "id": "chapter-4",
           "number": 4,
-          "title": "Survival",
-          "description": "Chapters 8-9, Survival on the iceberg",
+          "title": "Lloyd’s, Law, and the Price of Truth",
+          "description": "In London, the wreck of the Titan becomes a battle of insurance, blame, and conscience as Rowland must choose between justice and mercy.",
           "runtime": "00:00",
           "thumbnail": "assets/thumbnails/futility/ch04.jpg",
-          "video": "assets/video/futility/ch04.mp4",
+          "video": "https://atomicflix.sfo3.cdn.digitaloceanspaces.com/city/Futility%20Episode%204.mp4",
           "posterFrame": "assets/thumbnails/futility/ch04.jpg",
-          "airLabel": "Chapter 4",
-          "isPublished": false
+          "airLabel": "Episode 4",
+          "isPublished": true
         },
         {
           "id": "chapter-5",
           "number": 5,
-          "title": "Aftermath",
-          "description": "Chapters 10-13, London aftermath, testimony, underwriters, consequences",
+          "title": "The Man Who Came Back",
+          "description": "After surviving the sea, Rowland returns to civilization only to discover that redemption can be harder than shipwreck.",
           "runtime": "00:00",
           "thumbnail": "assets/thumbnails/futility/ch05.jpg",
-          "video": "assets/video/futility/ch05.mp4",
+          "video": "https://atomicflix.sfo3.cdn.digitaloceanspaces.com/city/Futility%20Episode%205.mp4",
           "posterFrame": "assets/thumbnails/futility/ch05.jpg",
-          "airLabel": "Chapter 5",
-          "isPublished": false
-        },
-        {
-          "id": "chapter-6",
-          "number": 6,
-          "title": "Final Turn",
-          "description": "Chapters 14-16, Reunion, accusation, discharge, and Rowland’s final turn in life",
-          "runtime": "00:00",
-          "thumbnail": "assets/thumbnails/futility/ch06.jpg",
-          "video": "assets/video/futility/ch06.mp4",
-          "posterFrame": "assets/thumbnails/futility/ch06.jpg",
-          "airLabel": "Chapter 6",
-          "isPublished": false
+          "airLabel": "Episode 5",
+          "isPublished": true
         }
       ]
     }
@@ -472,7 +460,7 @@
     "techstack": [
       "Inspiration - Audio books on Librivox",
       "Book Sources - Project Gutenberg",
-      "Chapter Summarization - ChatGPT",
+      "Episode Summarization - ChatGPT",
       "Text Editing - My 1997 TextPad (License still valid!)",
       "AI Video Generation and character design - Flicki.com",
       "Video Editing - VideoProc VLogger",
