@@ -30,6 +30,10 @@ a {
     transition: 0.3s;
 }
 
+a:hover {
+    color: var(--accent-secondary);
+}
+
 ul {
     list-style: none;
 }
@@ -688,6 +692,22 @@ video, iframe {
     font-size: 1.2rem;
     margin-bottom: 2rem;
     color: var(--text-muted);
+}
+
+.page-intro a,
+.content-box a,
+.page-notes a,
+.detail-description a {
+    color: var(--accent-secondary);
+    text-decoration: underline;
+}
+
+.page-intro a:hover,
+.content-box a:hover,
+.page-notes a:hover,
+.detail-description a:hover {
+    color: var(--text-main);
+    text-decoration: none;
 }
 
 .content-box {

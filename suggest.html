@@ -62,7 +62,7 @@
             const content = getSuggestBookContent();
 
             document.getElementById('page-title').textContent = content.title;
-            document.getElementById('page-intro').textContent = content.intro;
+            document.getElementById('page-intro').innerHTML = content.intro;
             
             const guidelinesList = document.getElementById('guidelines-list');
             content.guidelines.forEach(guide => {
@@ -72,10 +72,10 @@
                 guidelinesList.appendChild(li);
             });
 
-            document.getElementById('contact-message').textContent = content.contact.message;
+            document.getElementById('contact-message').innerHTML = content.contact.message;
             document.getElementById('contact-email').textContent = content.contact.email;
             document.getElementById('contact-social').textContent = content.contact.socialDm;
-            document.getElementById('page-notes').textContent = content.notes;
+            document.getElementById('page-notes').innerHTML = content.notes;
         }
 
         init();

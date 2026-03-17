@@ -82,7 +82,7 @@
             document.getElementById('detail-author').textContent = series.author;
             document.getElementById('detail-year').textContent = series.sourceEra;
             document.getElementById('detail-genre').textContent = series.genre;
-            document.getElementById('detail-description').textContent = series.longDescription || series.description;
+            document.getElementById('detail-description').innerHTML = series.longDescription || series.description;
             document.getElementById('detail-poster').src = series.poster;
             document.getElementById('detail-poster').onerror = function() {
                 console.error(`Media missing: ${series.poster}`);

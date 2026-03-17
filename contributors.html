@@ -61,6 +61,7 @@
                 <p>Email: <span id="contact-email"></span></p>
                 <p>Social: <span id="contact-social"></span></p>
             </div>
+            <p id="page-notes" class="page-notes"></p>
         </div>
     </main>
 
@@ -79,7 +80,7 @@
             const content = getContributorsContent();
 
             document.getElementById('page-title').textContent = content.title;
-            document.getElementById('page-intro').textContent = content.intro;
+            document.getElementById('page-intro').innerHTML = content.intro;
             
             const areasList = document.getElementById('areas-list');
             content.areas.forEach(area => {
@@ -93,7 +94,7 @@
                 content.techstack.forEach(tech => {
                     const tr = document.createElement('tr');
                     const td = document.createElement('td');
-                    td.textContent = tech;
+                    td.innerHTML = tech;
                     tr.appendChild(td);
                     techstackBody.appendChild(tr);
                 });
@@ -104,15 +105,16 @@
                 content.workflow.forEach(item => {
                     const tr = document.createElement('tr');
                     const td = document.createElement('td');
-                    td.textContent = item;
+                    td.innerHTML = item;
                     tr.appendChild(td);
                     workflowBody.appendChild(tr);
                 });
             }
 
-            document.getElementById('contact-message').textContent = content.contact.message;
+            document.getElementById('contact-message').innerHTML = content.contact.message;
             document.getElementById('contact-email').textContent = content.contact.email;
             document.getElementById('contact-social').textContent = content.contact.socialDm;
+            document.getElementById('page-notes').innerHTML = content.notes;
         }
 
         init();
