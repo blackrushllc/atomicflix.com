@@ -125,3 +125,61 @@ Centralized management for site content and users.
     - `DELETE /api/v1/admin/users/:id/ban`: Unban a user.
     - `DELETE /api/v1/admin/comments/:id`: Remove inappropriate comments.
     - `DELETE /api/v1/admin/reviews/:id`: Remove inappropriate reviews.
+
+## Phase 5: UI Enhancements & Punch List
+
+This section outlines the frontend requirements for the transition to a dynamic site. This "punch list" serves as a guide for AI-driven frontend implementation, linking UI elements directly to the backend API endpoints.
+
+### 14. Global Navigation & Authentication UI
+- **[ ] Authentication Modals/Pages**: Build "Login", "Sign Up", and "Forgot Password" forms with client-side validation.
+    - *API Notes*: `POST /api/v1/auth/login`, `POST /api/v1/auth/register`, `POST /api/v1/auth/forgot-password`.
+- **[ ] Authenticated Header**: Replace generic login link with a user avatar and a dropdown menu (Profile, Favorites, Logout, Admin).
+    - *API Notes*: `GET /api/v1/user/profile`, `POST /api/v1/auth/logout`.
+- **[ ] Notification System**: Implement a bell icon with a dropdown for recent notifications and "mark as read" functionality.
+    - *API Notes*: `GET /api/v1/user/notifications/settings` (to toggle preferences).
+
+### 15. Enhanced Series & Video Player UI
+- **[ ] Video Engagement Bar**: Add a toolbar below the video player with:
+    - **Like Button**: Interactive heart icon with animation and real-time count.
+        - *API Notes*: `POST /api/v1/videos/:id/like`, `DELETE /api/v1/videos/:id/like`.
+    - **Favorite Button**: "Bookmark" icon to save/unsave the series.
+        - *API Notes*: `POST /api/v1/series/:id/favorite`, `DELETE /api/v1/series/:id/favorite`.
+    - **Share/Recommend Button**: Share icon that opens a modal for email recommendations.
+        - *API Notes*: `POST /api/v1/series/:id/recommend`.
+- **[ ] Interactive Comments Section**: A threaded comment area below the video description.
+    - **Input Form**: Rich-text or plain-text input for authenticated users.
+    - **Comment List**: Display user avatars, timestamps, and like buttons for each comment.
+    - *API Notes*: `GET /api/v1/videos/:id/comments`, `POST /api/v1/videos/:id/comments`, `POST /api/v1/comments/:id/like`.
+- **[ ] Series Review & Ratings Widget**: On the series detail page.
+    - **Star Rating UI**: Interactive 1-5 star selection component.
+    - **Review Form**: Text area for user-written reviews.
+    - **Aggregate Rating Score**: Visual display of the average score (e.g., "4.5/5 stars").
+    - *API Notes*: `GET /api/v1/series/:id/reviews`, `POST /api/v1/series/:id/reviews`, `GET /api/v1/series/:id/rating`.
+
+### 16. User Personalization & Profiles
+- **[ ] Profile Settings Page**:
+    - **Avatar Management**: Drag-and-drop avatar upload/cropping interface.
+    - **Account Form**: Fields to update username, password, and email.
+    - **Notifications Management**: Toggle switches for different email alert categories.
+    - *API Notes*: `PUT /api/v1/user/profile`, `POST /api/v1/user/avatar`, `PUT /api/v1/user/notifications/settings`.
+- **[ ] "My Favorites" Gallery**:
+    - **Grid Layout**: A dedicated page displaying all bookmarked series.
+    - **One-Click Remove**: "Un-favorite" button on each thumbnail.
+    - *API Notes*: `GET /api/v1/user/favorites`, `DELETE /api/v1/series/:id/favorite`.
+
+### 17. Administration & Moderation Dashboard
+- **[ ] Admin Sidebar & Navigation**: A secure dashboard layout accessible only to administrators.
+- **[ ] Content Management Tables**:
+    - **Series & Episodes Lists**: Searchable, paginated tables for editing metadata.
+    - **Status Toggles**: Quick-action switches for "isPublished" and "Status".
+    - *API Notes*: `GET /api/v1/admin/series`, `PATCH /api/v1/admin/series/:id/status`, `PATCH /api/v1/admin/episodes/:id/status`.
+- **[ ] Asset & Data Forms**:
+    - **Editor Modals**: Rich forms for adding/editing series, chapters, and Blitz videos.
+    - **Site Config Editor**: Simple form to update `site-info`, `contributors`, and `contact` text.
+    - *API Notes*: `POST /api/v1/admin/series`, `PUT /api/v1/admin/series/:id`, `PUT /api/v1/admin/site-info`.
+- **[ ] User & Moderation Tools**:
+    - **User Directory**: List of all users with "Ban" and "Edit Role" functionality.
+    - **Comment/Review Moderation**: View reported content with "Keep" or "Delete" actions.
+    - *API Notes*: `GET /api/v1/admin/users`, `POST /api/v1/admin/users/:id/ban`, `DELETE /api/v1/admin/comments/:id`.
+- **[ ] Analytics Visualizations**: Simple charts and metrics for site-wide traffic and interaction.
+    - *API Notes*: `GET /api/v1/admin/analytics`.

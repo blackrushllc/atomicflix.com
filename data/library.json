@@ -467,7 +467,10 @@
       "Poster Art and Thumbnails - Windows Snipping Tool, the attached gen.py script",
       "Web Development - IntelliJ IDEA",
       "Vibe Coding - Jetbrains Junie Ultimate",
-      "Web and CDN/S3 Hosting - Digital Ocean",
+      "Backend - BasilBASIC",
+      "Web and CDN/S3/RDS MySQL Hosting - Digital Ocean",
+      "Server", "Ubuntu 24.04.3 LTS",
+      "Certificated SSL - Let's Encrypt (certbot)",
       "Source Repo - github.com/blackrushllc/atomicflix.com",
       "Voice Acting - Me LOL",
       "Funding - Me LOL",
@@ -491,7 +494,7 @@
       "Watch my own videos and notice all of the mistakes I made"
     ],
     "contact": {
-      "email": "blackrushdrive@gmail.com",
+      "email": "atomicflix@gmail.com",
       "socialDm": "@blackrushworld",
       "message": "Send us a brief note about what you’d like to help with, along with examples of your work if available."
     },
@@ -508,7 +511,7 @@
       "Share any visual or tonal inspiration"
     ],
     "contact": {
-      "email": "blackrushdrive@gmail.com",
+      "email": "atomicflix@gmail.com",
       "socialDm": "@blackrushworld",
       "message": "We’re especially interested in classic science fiction, weird fiction, speculative adventure, and visually striking forgotten works."
     },

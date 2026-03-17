@@ -9,7 +9,7 @@ From the golden age of pulp adventure to the far reaches of cosmic horror, Atomi
 ### Contact & Connect
 We welcome collaborators, book suggestions, and fellow sci-fi enthusiasts.
 
-*   **Email:** [blackrushdrive@gmail.com](mailto:blackrushdrive@gmail.com)
+*   **Email:** [atomicflix@gmail.com](mailto:atomicflix@gmail.com)
 *   **X (Twitter):** [@BlackrushWorld](https://x.com/BlackrushWorld)
 *   **YouTube:** [AtomicFlix Channel](https://www.youtube.com/channel/UCYTvdzgMbNSRvjMbk5PRJbw)
 *   **Instagram:** [@blackrushworld](https://www.instagram.com/blackrushworld/)
