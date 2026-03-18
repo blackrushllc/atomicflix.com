@@ -7,6 +7,9 @@
 // Set response header to JSON
 header('Content-Type: application/json');
 
+// Include database connection
+require_once __DIR__ . '/db.php';
+
 // Handle CORS
 header('Access-Control-Allow-Origin: *');
 header('Access-Control-Allow-Methods: GET, POST, PUT, DELETE, PATCH, OPTIONS');
