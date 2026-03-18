@@ -1,0 +1,28 @@
+# Environment variables
+.env
+
+# IDE files
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs and temporary files
+*.log
+/tmp/
+/temp/
+
+# Dependencies
+/vendor/
+/node_modules/
+/dist/
+
+# PHP specific
+composer.phar
+.php_cs.cache
+.phpunit.result.cache
