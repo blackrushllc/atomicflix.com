@@ -30,6 +30,12 @@
       "reason": "The Wreck of the Titan"
     },
     {
+      "type": "series",
+      "id": "atomic-zone",
+      "label": "Anthology Series",
+      "reason": "A haunting anthology of the strange and the supernatural"
+    },
+    {
       "type": "blitz",
       "id": "cosmonascence",
       "label": "The Faith of Generative Reality",
@@ -380,6 +386,42 @@
           "video": "https://atomicflix.sfo3.cdn.digitaloceanspaces.com/city/Futility%20Episode%205.mp4",
           "posterFrame": "assets/thumbnails/futility/ch05.jpg",
           "airLabel": "Episode 5",
+          "isPublished": true,
+          "playbackSpeed": 1.0
+        }
+      ]
+    },
+    {
+      "id": "atomic-zone",
+      "title": "The Atomic Zone",
+      "author": "Erik Olson",
+      "sourceEra": "Unknown",
+      "description": "An anthology of wierd tales presented by AtomicFlix",
+      "longDescription": "Step through the threshold into a realm where the laws of logic unravel and the impossible becomes the only certainty. AtomicFlix presents a haunting anthology of the strange and the supernatural, where every doorway leads to a new mystery and every shadow holds a secret. From the depths of space to the quiet corners of the human soul, explore a collection of curious tales that challenge our understanding of reality itself. Witness the extraordinary in the ordinary, and prepare to confront the unknown in a series that probes the very edges of existence.",
+      "poster": "assets/posters/atomic-zone/cover.jpg",
+      "banner": "assets/banners/atomic-zone/cover.jpg",
+      "tags": [
+        "Anthology",
+        "Mystery",
+        "Retro Sci-Fi",
+        "Supernatural"
+      ],
+      "genre": "Anthology / Mystery",
+      "status": "ongoing",
+      "chapterCount": 1,
+      "featured": true,
+      "sortOrder": 5,
+      "chapters": [
+        {
+          "id": "chapter-1",
+          "number": 1,
+          "title": "Nothing",
+          "description": "Beyond the final door lies not one fate, but many. In a dreamlike world after death, a group of ordinary people discovers that the afterlife may be the one thing no one escapes believing in.",
+          "runtime": "05:13",
+          "thumbnail": "assets/thumbnails/atomic-zone/ch1.jpg",
+          "video": "https://atomicflix.sfo3.cdn.digitaloceanspaces.com/atomic_zone/Atomic%20Zone%20Episode%201.mp4",
+          "posterFrame": "assets/thumbnails/atomic-zone/ch1.jpg",
+          "airLabel": "Episode 1",
           "isPublished": true,
           "playbackSpeed": 1.0
         }
