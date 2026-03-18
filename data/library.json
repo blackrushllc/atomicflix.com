@@ -408,7 +408,7 @@
       ],
       "genre": "Anthology / Mystery",
       "status": "ongoing",
-      "chapterCount": 1,
+      "chapterCount": 2,
       "featured": true,
       "sortOrder": 5,
       "chapters": [
@@ -422,6 +422,19 @@
           "video": "https://atomicflix.sfo3.cdn.digitaloceanspaces.com/atomic_zone/Atomic%20Zone%20Episode%201.mp4",
           "posterFrame": "assets/thumbnails/atomic-zone/ch1.jpg",
           "airLabel": "Episode 1",
+          "isPublished": true,
+          "playbackSpeed": 1.0
+        },
+        {
+          "id": "chapter-2",
+          "number": 2,
+          "title": "Something is Coming",
+          "description": "After a woman’s murder is disguised as misfortune, the men who profited from her death begin to meet a gruesome end one by one, each raving that “something is coming.” In the sweltering shadows of 1950s Louisiana, greed, guilt, and superstition collide as the last man standing learns that justice may arrive from a place darker than death.",
+          "runtime": "07:43",
+          "thumbnail": "assets/thumbnails/atomic-zone/ch2.jpg",
+          "video": "https://atomicflix.sfo3.cdn.digitaloceanspaces.com/atomic_zone/Atomic%20Zone%20Episode%202.mp4",
+          "posterFrame": "assets/thumbnails/atomic-zone/ch2.jpg",
+          "airLabel": "Episode 2",
           "isPublished": true,
           "playbackSpeed": 1.0
         }
