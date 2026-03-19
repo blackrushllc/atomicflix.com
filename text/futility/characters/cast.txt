@@ -1,39 +1,20 @@
-Bob the Coroner
-
-55 years old, Caucasian male, fair skin, rosacea, fine lines, dry patches, round face, weak chin, bulbous nose, gray, tired eyes, graying, thinning, receding hairline, unkempt, dark gray, wool suit, wrinkled, ill-fitting, black leather medical bag
-
-Dead Bob
-55 years old, Caucasian male, no face, mangled meat where his face should be, graying, thinning, receding hairline, unkempt, dark gray, wool suit, wrinkled, ill-fitting
-
-Sheriff Andy
-
-48 years old, Caucasian male, medium skin, uneven skin tone, acne scars, oily T-zone, square face, strong jawline, straight nose, brown, hard eyes, dark brown, receding hairline, short, greasy, khaki, cotton-blend sheriff's uniform, slightly faded
-
-John
-
-35 years old, Caucasian male, light skin, visible pores, fine lines, natural skin sheen, oval face, weak chin, upturned nose, green, anxious eyes, brown, messy, unkempt hair, blue, cotton work shirt, stained, blue jeans, faded, scuffed work boots
-
-Dead John
-35 years old, Caucasian male, no face, mangled meat where his face should be, brown, messy, unkempt hair, blue, cotton work shirt, stained, blue jeans, faded, scuffed work boots
-
-Johnathan
-
-60 years old, Caucasian male, light skin, visible pores, age spots, uneven skin tone, gaunt face, prominent cheekbones, hooked nose, blue, bloodshot eyes, graying, thinning, receding hairline, disheveled, brown, wool trousers, stained, white, cotton undershirt, torn, missing eyelids
-
-Johnathan's Wife
-
-58 years old, Caucasian female, pale skin, hyperpigmentation, visible pores, sunken face, sharp cheekbones, crooked nose, gray, cloudy eyes, graying, stringy, unkempt bun, faded floral print dress, stained, tattered lace shawl, tarnished silver ring
+Proxy
+Genderless, Metallic, a horrifying and frightening robot, a cross between RoboCop and the ED-209 beast with a television screen for a face. 8 feet tall, metal claws, oily joints, exposed wires and hydraulic mechanisms and tubes. Scratched metal surface, sparking seams, steam leaks, exposed wires. Televisor screen for a head displaying the Old Man's (80s years old, tough, mean looking, wealthy, Male, Caucasian. Ashen skin, mottled complexion, age spots, broken capillaries. Gaunt face, stroked out, sunken cheeks, crooked nose, bloodshot, dead eyes. Thin white hair, receding hairline, comb-over style. Hospital gown. Electrodes and probes attached to head grotequely. His head is laid against a hospital pillow in repose  He is always seen at extreme close-up, face forward) face. Oversized metal body, clawed hands. No clothing. No accessories. Menacing
 
 
+Old Man Alive
+(80s years old, tough, mean looking, wealthy, Male, Caucasian. Ashen skin, mottled complexion, age spots. Gaunt face, sunken cheeks, crooked nose, fierce, piercing cold eyes. Thin white hair, receding hairline, comb-over style. Business Suit. He is always seen at extreme close-up, face forward)
 
-Clara
+Old Man Sick
+(80s years old, tough, mean looking, wealthy, Male, Caucasian. Ashen skin, mottled complexion, age spots, broken capillaries. Gaunt face, stroked out, sunken cheeks, crooked nose, bloodshot, dead eyes. Thin white hair, receding hairline, comb-over style. Hospital gown. Electrodes and probes attached to head grotesquely. His head is laid against a hospital pillow in repose. He is always seen at extreme close-up, face forward)
 
-28 years old, Caucasian female, fair skin, rosacea, visible pores, round face, soft jawline, small nose, hazel, wide eyes, blonde, slightly frizzy, ponytail, light blue, cotton blouse, wrinkled, dark blue, wool skirt, pilled, silver cross necklace
-
-
-
-Demon Witch
-
-58 years old, Caucasian female, pale corpse-like skin, hyperpigmentation, visible pores, sunken face, sharp cheekbones, crooked nose, furious gray eyes, stringy gray hair, unkempt, tattered floral print dress, ripped lace shawl, shark-like teeth, monstrous visage
+Old Man Dead
+(80s years old, tough, mean looking, wealthy, Male, Caucasian. Ashen skin, mottled complexion, age spots, broken capillaries. Gaunt face, stroked out, sunken cheeks, crooked nose, bloodshot, dead eyes. Thin white hair, receding hairline, comb-over style. Hospital gown. Electrodes and probes attached to head grotesquely. His head is laid against a hospital pillow in repose. He is always seen at extreme close-up, face forward)
 
 
+30s years old, Female, Caucasian. Fair skin, cool undertones, uneven skin tone, fine lines. Angular face, sharp cheekbones, thin nose, icy blue eyes. Blonde hair, sculpted style, visible roots. Navy blue wool business suit, shoulder pads, tight fit. Bright red lipstick, gold earrings. Circa 1980's supermodel look in a business suit
+30s years old, Male, Caucasian. Oily skin, visible pores, razor burn. Square face, strong jawline, slightly upturned nose, deep-set blue eyes. Dark brown hair, greasy sheen, slicked-back style. Dark grey pinstripe wool suit, ill-fitting, wrinkled. Gold Rolex watch. Like the main character from American Psycho only dumber, greedier, and spoiled
+
+30s years old, Male, Unspecified. Tan skin, neutral undertones, acne scars, visible pores. Round face, heavy brow, wide nose, dark brown eyes. Short dark hair, receding hairline, military cut. Black wool corporate security suit, tight fit. Black leather gloves. A ruthless killer in a gentleman's service. Leather jacked, black gloves, sinister yet intelligent
+
+20 years old, Female, Caucasian. Pale skin, cool undertones, dry patches, visible pores. Round face, weak chin, light brown, innocent eyes. Light brown hair, poofy pinned-up style, frizzy flyaways. Light pink polyester blouse, oversized, stained. Large plastic glasses. The quintessential  80's "ugly secretary" who would suddenly become beautiful if she removed her glasses and let down her hair.
