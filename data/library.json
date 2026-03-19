@@ -437,6 +437,19 @@
           "airLabel": "Episode 2",
           "isPublished": true,
           "playbackSpeed": 1.0
+        },
+        {
+          "id": "chapter-3",
+          "number": 3,
+          "title": "The Proxy",
+          "description": "At Gamora Pharmaceuticals, corruption is policy, murder is succession planning, and power never dies quietly. When a half-dead CEO begins ruling the company through a terrifying robotic proxy, the scheming son and daughter who tried to kill him discover that in the boardroom of the damned, the last hostile takeover may be their own.",
+          "runtime": "11:04",
+          "thumbnail": "assets/thumbnails/atomic-zone/ch3.jpg",
+          "video": "https://atomicflix.sfo3.cdn.digitaloceanspaces.com/atomic_zone/Atomic%20Zone%20Episode%203.mp4",
+          "posterFrame": "assets/thumbnails/atomic-zone/ch3.jpg",
+          "airLabel": "Episode 3",
+          "isPublished": true,
+          "playbackSpeed": 1.0
         }
       ]
     }
