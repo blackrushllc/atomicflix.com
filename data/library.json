@@ -395,7 +395,7 @@
       "id": "atomic-zone",
       "title": "The Atomic Zone",
       "author": "Erik Olson",
-      "sourceEra": "Unknown",
+      "sourceEra": "Original Series",
       "description": "An anthology of wierd tales presented by AtomicFlix",
       "longDescription": "Step through the threshold into a realm where the laws of logic unravel and the impossible becomes the only certainty. AtomicFlix presents a haunting anthology of the strange and the supernatural, where every doorway leads to a new mystery and every shadow holds a secret. From the depths of space to the quiet corners of the human soul, explore a collection of curious tales that challenge our understanding of reality itself. Witness the extraordinary in the ordinary, and prepare to confront the unknown in a series that probes the very edges of existence.",
       "poster": "assets/posters/atomic-zone/cover.jpg",
@@ -408,7 +408,7 @@
       ],
       "genre": "Anthology / Mystery",
       "status": "ongoing",
-      "chapterCount": 2,
+      "chapterCount": 4,
       "featured": true,
       "sortOrder": 5,
       "chapters": [
@@ -448,6 +448,19 @@
           "video": "https://atomicflix.sfo3.cdn.digitaloceanspaces.com/atomic_zone/Atomic%20Zone%20Episode%203.mp4",
           "posterFrame": "assets/thumbnails/atomic-zone/ch3.jpg",
           "airLabel": "Episode 3",
+          "isPublished": true,
+          "playbackSpeed": 1.0
+        },
+        {
+          "id": "chapter-4",
+          "number": 4,
+          "title": "Black Thread",
+          "description": "In a near-future world held together by overworked minds and collapsing lies, a hardened tech executive uncovers a hidden movement of builders who have gone on strike against a corrupt civilization. When their quiet rebellion reaches its breaking point, the final question is no longer who controls the machine — but who will still be there when it stops.",
+          "runtime": "08:16",
+          "thumbnail": "assets/thumbnails/atomic-zone/ch4.jpg",
+          "video": "https://atomicflix.sfo3.cdn.digitaloceanspaces.com/atomic_zone/Atomic%20Zone%20Episode%204.mp4",
+          "posterFrame": "assets/thumbnails/atomic-zone/ch4.jpg",
+          "airLabel": "Episode 4",
           "isPublished": true,
           "playbackSpeed": 1.0
         }
