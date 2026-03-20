@@ -408,7 +408,7 @@
       ],
       "genre": "Anthology / Mystery",
       "status": "ongoing",
-      "chapterCount": 4,
+      "chapterCount": 6,
       "featured": true,
       "sortOrder": 5,
       "chapters": [
@@ -462,6 +462,32 @@
           "posterFrame": "assets/thumbnails/atomic-zone/ch4.jpg",
           "airLabel": "Episode 4",
           "isPublished": true,
+          "playbackSpeed": 1.0
+        },
+        {
+          "id": "chapter-5",
+          "number": 5,
+          "title": "The Great Filter",
+          "description": "In a dazzling near-future America, the world faces terrifying new crises that demand intelligence, courage, and honesty — but at a presidential town hall, two brilliant candidates give the public anything but that. As real dangers are ignored in favor of spectacle, insults, and meaningless outrage, The Great Filter becomes a dark meditation on whether civilization’s greatest threat has been inside us all along.",
+          "runtime": "07:32",
+          "thumbnail": "assets/thumbnails/atomic-zone/ch5.jpg",
+          "video": "https://atomicflix.sfo3.cdn.digitaloceanspaces.com/atomic_zone/Atomic%20Zone%20Episode%205.mp4",
+          "posterFrame": "assets/thumbnails/atomic-zone/ch5.jpg",
+          "airLabel": "Episode 5",
+          "isPublished": true,
+          "playbackSpeed": 1.0
+        },
+        {
+          "id": "chapter-6",
+          "number": 6,
+          "title": "The Void",
+          "description": "TBD",
+          "runtime": "00:00",
+          "thumbnail": "assets/thumbnails/atomic-zone/ch6.jpg",
+          "video": "TBD",
+          "posterFrame": "assets/thumbnails/atomic-zone/ch6.jpg",
+          "airLabel": "Episode 6",
+          "isPublished": false,
           "playbackSpeed": 1.0
         }
       ]

@@ -1,0 +1,206 @@
+When the airliner came to rest in twenty feet of bright blue water, half a mile off an unfamiliar shore, it looked less like the aftermath of a crash than a miracle that had simply misjudged its parking spot.
+
+The great long-haul jet sat upright on the sandy bottom, its fuselage intact, its wings level, its emergency slides deployed along the cabin doors like yellow water toys on a machine far too large and dignified for such indignity. The water was so shallow the aircraft did not even need the slides to remain afloat. Around it bobbed fishing boats, cabin cruisers, harbor craft, skiffs, ferries, and anything else with an engine and room for frightened people. Passengers stepped down into life rafts, onto volunteer vessels, and finally onto a beach already crowded with curious locals, police, medics, hotel staff, municipal workers, and several hundred good-hearted strangers improvising an international reception committee for survivors who had not expected to meet Tasmania that day.
+
+No one had died.
+
+No one, astonishingly, had even been seriously hurt.
+
+The two hotels in town were nowhere near large enough for a planeload of displaced passengers and crew, but the local authorities were making lists, assigning rooms, commandeering buses, opening public buildings, and finding blankets, food, chargers, translators, and shoes. The airline had sent people. The Australians were already in charge. And because the jet was American-made and the carrier American-operated, an NTSB accredited representative was on scene before twenty-four hours had passed, notebook open, recorder running, eager to speak with the crew before fear, fatigue, and self-preservation began quietly editing memory.
+
+He started with the relief first officer.
+
+His name was Samir Rahman, twenty-seven years old, handsome in the brittle, sleep-deprived way of young airline pilots, and pale enough now to look as though the sea had not quite given him back. He sat across from the investigator with a paper cup in both hands and tried very hard not to shake.
+
+The flight, he explained, had been a routine ultra-long-haul crossing with an augmented crew: captain, first officer, relief captain, and relief first officer. Somewhere deep into the overnight oceanic sector, while most of the passengers slept and the operating captain and first officer were on controlled rest, Samir had been on the flight deck with the relief captain, minding a quiet cruise through black sky and empty air.
+
+Then, in his words, everything on the panel had “come apart at once.”
+
+The autopilot dropped off with its sharp, ugly disconnect clacker. Master caution lights came alive. Flags blossomed across both primary flight displays. The attitude indicator rolled, recovered, and rolled again. Heading went unreliable. The inertial reference system disagreed with itself. Air data and altitude indications no longer matched from side to side. The navigation display lost its clean magenta certainty. The flight management computer still held a route, but the airplane no longer seemed interested in obeying one.
+
+Outside there was nothing.
+
+No moon. No stars. No visible horizon. No coastline. No weather returns worth trusting. Only the kind of total oceanic darkness that can make a trained pilot feel he has been sealed inside an instrument hood and buried alive.
+
+Samir said he looked from one screen to another and found no two instruments telling the same story. He had no horizon he trusted, no compass he believed, no altitude that held still, no celestial reference, no ground lights, no human clue as to which way was up. The relief captain told him to stop chasing the failed indications, go to raw pitch and power, cross-check standby instruments, hold known thrust, known trim, and a safe cruise attitude until they sorted out what had actually failed.
+
+But then came the first of the bodily lies.
+
+The inner ear, that small traitor buried in the skull, began telling Samir the airplane was rolling when it was not, climbing when it was not, dropping when it was not. He said the sensation was not confusion but spatial distortion, as though the cockpit itself had been unbolted from reality and tipped loose into some enormous black mechanism.
+
+He made an input.
+
+Then another.
+
+Then a larger one.
+
+The relief captain shouted, “My aircraft,” and reached for the controls, but Samir, already halfway into panic, pulled against him. The jet, no longer cleanly trimmed, rolled off, pitched up, lost energy, and entered a violent upset. The stick shaker erupted against the control column with that hideous mechanical rattle no pilot ever forgets. Aural warnings began piling on top of one another.
+
+“STALL. STALL.”
+
+“BANK ANGLE. BANK ANGLE.”
+
+The relief captain was yelling at him to let go. Samir was yelling that the airplane was inverted. The standby attitude indicator was the only thing in the cockpit still trying to tell the truth, and Samir no longer believed it. The nose dropped. One wing came through. The descent rate soared. What he later described as a flat spin was, by the data, a stalled rolling upset with opposite control inputs and a spiraling loss of altitude, but from the seat of a terrified young pilot in a blind black sky, it felt like the whole world was corkscrewing into the sea.
+
+Then the ground proximity system joined the choir.
+
+“TERRAIN. TERRAIN.”
+
+“PULL UP. PULL UP.”
+
+Now the captain and first officer were in the cockpit, dragged from crew rest by alarms, buffet, and the unmistakable sound of an airliner no longer being flown but fought. Samir remembered hands on his shoulders, someone wrenching at his wrist, someone shouting for him to release the controls. He remembered vomiting. He remembered the captain’s voice, close to his ear and ice-cold, using the sort of tone men reserve for panicked animals and junior officers on the edge of killing everyone.
+
+He remembered the first officer getting the wings level.
+
+He remembered thrust being set by reference, not instinct. Pitch being called in degrees. Trim wound in carefully. Airspeed, at last, becoming the one instrument that still behaved like something from the ordinary world.
+
+And slowly, impossibly, the airplane began to fly again.
+
+Not navigate. Not recover in any grand triumphant sense. But fly. Straight enough. Stable enough. Alive.
+
+The captain, Samir said, explained the contingency exactly the way old-school pilots always hoped never to need: hold known pitch, known thrust, known configuration, and buy time. Time for dawn. Time for fuel calculations. Time for systems to return. Time for luck.
+
+At some point a flight attendant came to the cockpit with water and something to eat, because there are professions in which civilization survives by genius and others in which it survives by someone quietly bringing the right person a paper cup at the right moment. Samir said he barely noticed whether it was water or coffee. He only remembered a kind face, a hand on his shoulder, and being guided away to his crew bunk before he disgraced himself further in front of the men who had just taken an airliner back out of the grave.
+
+The next witness was Margaret Doyle, the senior flight attendant, a woman in her late fifties with iron-gray hair, excellent posture, and the unromantic steadiness of someone who had spent three decades being calm in aluminum tubes for a living. Her interview was already underway by the time the recorder clicked into the next hour.
+
+Margaret said that once the initial terror had passed, the cabin had mostly settled. The passengers had been told it was a systems event combined with severe turbulence and that the situation was under control, which was not true in the strictest sense but was very much the sort of truth a cabin full of civilians can survive.
+
+Outside, she said, there was still nothing to see. No stars. No moon. No line separating sea and sky. Only later, after a long interval of blackness, did a sort of weak twilight begin to form. But even that was wrong. It did not brighten the way dawn ought to brighten. It seemed instead to circle them, faint and far away, as though the sunrise had misplaced its entrance and was groping around the edge of the world looking for the stage.
+
+All four pilots were now in the cockpit, speaking low and professionally, trying to solve an impossible problem with checklists, memory items, dead reckoning, and the stubborn refusal of trained people to become superstitious before absolutely necessary. They told Margaret only what she needed to know: they were not where they believed they ought to be, they did not yet understand the instrument failures, and under no circumstances was the cabin to be told they were lost until the flight deck had a plan better than panic.
+
+But she could see they were not merely worried about fuel. They were worried about altitude. About position. About the fact that in aviation, being lost is inconvenient, but being lost without a trustworthy horizon or vertical reference is the kind of thing men write memorial lectures about.
+
+Then the younger flight attendant came in.
+
+Her name was Lila Hart, very pretty, very young, very well-meaning, and not burdened by an excess of technical vocabulary. Margaret described her with the weary affection older women reserve for beautiful girls who move through disaster as though they expect it to behave itself around them.
+
+Lila reported that a passenger in first class had figured out they were lost. He said he could tell because the twilight kept moving around them in a way no ordinary sunrise should. He also claimed he could help, because he was a science teacher and a private pilot. He had further threatened, in the civic-minded manner of nervous intellectuals, to inform the rest of the passengers that the crew was withholding something unless someone on the flight deck spoke to him immediately.
+
+Under ordinary conditions, no captain on earth would invite a passenger into the cockpit to participate in celestial navigation over the Southern Ocean. These were not ordinary conditions.
+
+So they brought him in.
+
+His name was Peter Haldane, a high school science teacher with the dry voice, narrow shoulders, and apologetic intensity of a man whose life had mostly involved being correct in rooms full of people who preferred other things. He told the investigator that at first the pilots tolerated him only because they had run out of better ideas. But when he suggested using the sunrise, the time of day, their last known waypoint, estimated airspeed, and elapsed time to construct at least a rough positional estimate, the captain’s attitude changed.
+
+Now the conversation became brisk and technical. Headings. Time drift. Estimated groundspeed. Last valid position in the flight management computer. Whether the dead reckoning would be corrupted by bad inertial data. Latitude. Longitude. Solar angle. The captain, to Haldane’s evident delight, knew exactly what he was talking about. The first officer helped with times and notations. The relief captain cross-checked what little remained reliable.
+
+Haldane did the math.
+
+Then he did it again.
+
+Then once more.
+
+And finally he said the sentence that, in another kind of story, would have been the funniest line in the room.
+
+“That’s impossible.”
+
+Based on the light, the time, and the direction of the sunrise, he said, they would have had to be thousands of miles from where the airplane had any business being. Not slightly off course. Not drifted. Not misaligned by a few hundred nautical miles. Catastrophically, absurdly, world-breakingly wrong.
+
+The captain looked at him for a very long time and said that at this stage he would settle for “absurdly wrong” over “nothing at all.”
+
+Haldane made his best guess.
+
+He told the captain to turn around.
+
+And that might still have been the strangest thing said in the cockpit, had not Lila reappeared a few minutes later looking even more alarmed than before.
+
+First class was in an uproar, she said.
+
+The captain asked why.
+
+Lila said it was because of what they could see outside.
+
+The crew said there was nothing outside.
+
+And Lila, in the simple voice of a person too untrained to understand the scale of her own sentence, said, “Not out there. Up.”
+
+Peter Haldane told the investigator that he looked upward through the cockpit glass and for the first time in his life discovered that science can still fail in a manner best described as rude.
+
+Above them was not sky.
+
+Above them was structure.
+
+A vast black plane, not cloud, not night, not weather, not imagination, but surface. Far overhead and stretching beyond any ordinary notion of perspective was the underside of the world itself, and along one distant margin of it burned a line of white so enormous and so clean it could be nothing but a wall of ice catching the first light of a sun that was no longer above them but somewhere beyond the edge.
+
+The twilight had not been circling because the Earth was turning beneath a normal dawn.
+
+The twilight had been circling because they were outside it.
+
+Below the Flat Earth, beyond the ice wall, hanging in the void.
+
+For a few seconds, Haldane said, nobody in the cockpit spoke. No one denied it. No one laughed. The moment had gone too far for laughter and too suddenly for religion.
+
+Then the captain did what only a career airline captain would do upon discovering a forbidden cosmology.
+
+He started making a plan.
+
+Turn toward the light. Hold pitch and power. Conserve fuel. Climb as able. Keep the airspeed alive. Do not let anyone on the flight deck become philosophical.
+
+They turned toward the distant white escarpment. The airplane droned on through a darkness no chart had ever acknowledged. And as they drew nearer, strange things began returning in reverse order, as though the world were consenting to have them back. First the standby compass stopped wandering. Then the primary heading stabilized. Then one inertial reference came out of its lunacy long enough for the navigation display to draw something other than nonsense. Crossing the ice wall, with the altimeters unwinding themselves back into believable numbers and the horizon reappearing in front of them like an old friend who had been right all along, the captain ordered the cabin prepared for the possibility of a ditching.
+
+Because one problem had been solved, and the oldest problem in aviation had not.
+
+They were running out of fuel.
+
+By the time land was sighted, the engines were on fumes. The coast ahead turned out to be Tasmania, though no one on the airplane had placed any bets on that outcome. The captain flew a textbook glide as far as he could, but there is only so much a widebody can do on dead tanks and goodwill. The first engine flamed out, then the second. The ram air turbine dropped. The airplane became a glider, then a very large prayer with wings.
+
+And then came the water landing that would be called, in the polite language of investigators, highly successful.
+
+The next interview was with Lila Hart, and for reasons the investigator did not bother concealing from himself, it was conducted with unusual gentleness. She sat beside Captain Daniel Mercer, a broad-shouldered man in his fifties with a calm face, a tired smile, and the unmistakable bearing of someone who had already rehearsed which portions of reality the authorities would be willing to print. He held Lila’s hand, rubbed her back, and soothed her in a manner suggesting their relationship had progressed beyond the employee handbook.
+
+Lila, visibly shaken, tried to explain the ending.
+
+“The captain told us to prepare the cabin for a water landing,” she said, “because we were about to run out of food.”
+
+“Fuel,” the captain corrected softly.
+
+“Fuel,” she repeated.
+
+The investigator smiled at her as though aiding a nervous witness were also, incidentally, an enjoyable way to spend an afternoon. He finished the sentence for her, notebook half closed. And then the captain flew on until the engines flamed out, ditched the aircraft in calm water, and here you all are in Tasmania, safe and sound.
+
+Lila nodded miserably.
+
+Then, leaning a little closer to the captain, she whispered, “Are there vampires here?”
+
+The captain put an arm around her.
+
+The investigator, after a pause to enjoy the absurdity of surviving the edge of the world only to worry about local folklore, told Captain Mercer that it had been an extraordinary ditching. One in a million.
+
+Mercer shrugged it off. Calm sea. Good weather. Good crew. A lot of luck.
+
+Then the investigator stopped smiling.
+
+He looked at the captain in a way one professional man sometimes looks at another when both know that the next sentence will not appear in any public report.
+
+“You went over the ice wall again, didn’t you?”
+
+Captain Mercer gave the smallest shrug in human history and gestured with one hand, as though discussing a scheduling inconvenience. “Something went wrong. I wasn’t in the cockpit. By the time I knew—”
+
+The investigator raised a hand and cut him off. “It’s all right. It’s all right. Samir’s in some trouble, but he’s not the first young pilot to lose himself in an upset. This may simply not be the right career for him.”
+
+He snapped the notebook shut.
+
+“We are going to have to do something about the science teacher, though.”
+
+That line hung in the air just long enough to become much funnier than it had any right to be.
+
+They rose. Chairs scraped. Backs straightened. The official business of impossible things had concluded.
+
+Then the investigator jabbed a finger at the captain with the irritation of a man revisiting an old household annoyance and said, “I still can’t believe you flew over the ice wall again.”
+
+“Three times,” the captain corrected.
+
+Lila blinked at him. “What’s an ice wall?”
+
+Captain Mercer patted her gently on the head.
+
+“Nothing, honey,” he said. “Airplane stuff.”
+
+And somewhere, no doubt, a final report began taking shape in the careful language of modern bureaucracy, full of instrument anomalies, spatial disorientation, crew resource management failures, fuel exhaustion, successful ditching, and survivor response. A perfectly respectable document. Clear. sober. professional. And built, like so many respectable things, on the understanding that society functions best when certain discoveries are filed where the public cannot be trusted to misread them.
+
+Because in most stories, the joke is that some poor lunatic believes the Earth is flat.
+
+But this is the Atomic Zone, and in this one, the joke is that it is flat... and all the important people already know.
+
