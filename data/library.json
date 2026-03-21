@@ -9,20 +9,14 @@
     "defaultPlaybackSpeed": 0
   },
   "hero": {
-    "featuredSeriesId": "city-at-worlds-end",
+    "featuredSeriesId": "futility",
     "headline": "Binge the Golden Age",
-    "subheadline": "Classic futures, restored and re-serialized for modern screens.",
-    "backgroundImage": "assets/banners/city-at-worlds-end/cover.jpg",
+    "subheadline": "Classic futures, restored and re-serialized for modern screens. Original Series",
+    "backgroundImage": "assets/banners/futility/ch01.jpg",
     "primaryCtaLabel": "Watch Now",
     "secondaryCtaLabel": "Browse Episodes"
   },
   "featured": [
-    {
-      "type": "series",
-      "id": "city-at-worlds-end",
-      "label": "Season 1",
-      "reason": "Our flagship retro serial"
-    },
     {
       "type": "series",
       "id": "futility",
@@ -32,8 +26,14 @@
     {
       "type": "series",
       "id": "atomic-zone",
-      "label": "Anthology Series",
+      "label": "Anthology Series - Season 1",
       "reason": "A haunting anthology of the strange and the supernatural"
+    },
+    {
+      "type": "series",
+      "id": "city-at-worlds-end",
+      "label": "Retro Sci Fi - Season 1",
+      "reason": "Our flagship retro serial"
     },
     {
       "type": "blitz",
@@ -61,7 +61,7 @@
       "status": "complete",
       "chapterCount": 9,
       "featured": true,
-      "sortOrder": 1,
+      "sortOrder": 3,
       "chapters": [
         {
           "id": "chapter-1",
@@ -71,7 +71,7 @@
           "runtime": "03:52",
           "thumbnail": "assets/thumbnails/city-at-worlds-end/ch01.jpg",
           "video": "https://atomicflix.sfo3.cdn.digitaloceanspaces.com/city/The%20City%20Recap%20Chapter%201.mp4",
-          "posterFrame": "assets/thumbnails/city-at-worlds-end/ch01.jpg",
+          "posterFrame": "assets/posters/city-at-worlds-end/ch01.jpg",
           "airLabel": "Episode 1",
           "isPublished": true,
           "playbackSpeed": 1.0
@@ -84,7 +84,7 @@
           "runtime": "07:18",
           "thumbnail": "assets/thumbnails/city-at-worlds-end/ch02.jpg",
           "video": "https://atomicflix.sfo3.cdn.digitaloceanspaces.com/city/The%20City%20Recap%20Chapter%202c.mp4",
-          "posterFrame": "assets/thumbnails/city-at-worlds-end/ch02.jpg",
+          "posterFrame": "assets/posters/city-at-worlds-end/ch02.jpg",
           "airLabel": "Episode 2",
           "isPublished": true,
           "playbackSpeed": 1.0
@@ -97,7 +97,7 @@
           "runtime": "5:54",
           "thumbnail": "assets/thumbnails/city-at-worlds-end/ch03.jpg",
           "video": "https://atomicflix.sfo3.cdn.digitaloceanspaces.com/city/The%20City%20Recap%20Chapter%203.mp4",
-          "posterFrame": "assets/thumbnails/city-at-worlds-end/ch03.jpg",
+          "posterFrame": "assets/posters/city-at-worlds-end/ch03.jpg",
           "airLabel": "Episode 3",
           "isPublished": true,
           "playbackSpeed": 1.0
@@ -110,7 +110,7 @@
           "runtime": "7:56",
           "thumbnail": "assets/thumbnails/city-at-worlds-end/ch04.jpg",
           "video": "https://atomicflix.sfo3.cdn.digitaloceanspaces.com/city/The%20City%20Recap%20Chapter%204.mp4",
-          "posterFrame": "assets/thumbnails/city-at-worlds-end/ch04.jpg",
+          "posterFrame": "assets/posters/city-at-worlds-end/ch04.jpg",
           "airLabel": "Episode 4",
           "isPublished": true,
           "playbackSpeed": 1.0
@@ -123,7 +123,7 @@
           "runtime": "7:41",
           "thumbnail": "assets/thumbnails/city-at-worlds-end/ch05.jpg",
           "video": "https://atomicflix.sfo3.cdn.digitaloceanspaces.com/city/The%20City%20Recap%20Chapter%205a.mp4",
-          "posterFrame": "assets/thumbnails/city-at-worlds-end/ch05.jpg",
+          "posterFrame": "assets/posters/city-at-worlds-end/ch05.jpg",
           "airLabel": "Episode 5",
           "isPublished": true,
           "playbackSpeed": 1.0
@@ -136,7 +136,7 @@
           "runtime": "10:31",
           "thumbnail": "assets/thumbnails/city-at-worlds-end/ch06.jpg",
           "video": "https://atomicflix.sfo3.cdn.digitaloceanspaces.com/city/The%20City%20Recap%20Chapter%206.mp4",
-          "posterFrame": "assets/thumbnails/city-at-worlds-end/ch06.jpg",
+          "posterFrame": "assets/posters/city-at-worlds-end/ch06.jpg",
           "airLabel": "Episode 6",
           "isPublished": true,
           "playbackSpeed": 1.0
@@ -149,7 +149,7 @@
           "runtime": "10:31",
           "thumbnail": "assets/thumbnails/city-at-worlds-end/ch07.jpg",
           "video": "https://atomicflix.sfo3.cdn.digitaloceanspaces.com/city/City%20Recap%20Chapter%207.mp4",
-          "posterFrame": "assets/thumbnails/city-at-worlds-end/ch07.jpg",
+          "posterFrame": "assets/posters/city-at-worlds-end/ch07.jpg",
           "airLabel": "Episode 7",
           "isPublished": true,
           "playbackSpeed": 1.0
@@ -162,7 +162,7 @@
           "runtime": "8:31",
           "thumbnail": "assets/thumbnails/city-at-worlds-end/ch08.jpg",
           "video": "https://atomicflix.sfo3.cdn.digitaloceanspaces.com/city/The%20City%20Recap%20Chapter%208.mp4",
-          "posterFrame": "assets/thumbnails/city-at-worlds-end/ch08.jpg",
+          "posterFrame": "assets/posters/city-at-worlds-end/ch08.jpg",
           "airLabel": "Episode 8",
           "isPublished": true,
           "playbackSpeed": 1.0
@@ -175,7 +175,7 @@
           "runtime": "9:26",
           "thumbnail": "assets/thumbnails/city-at-worlds-end/ch09.jpg",
           "video": "https://atomicflix.sfo3.cdn.digitaloceanspaces.com/city/The%20City%20Recap%20Chapter%209.mp4",
-          "posterFrame": "assets/thumbnails/city-at-worlds-end/ch09.jpg",
+          "posterFrame": "assets/posters/city-at-worlds-end/ch09.jpg",
           "airLabel": "Episode 9",
           "isPublished": true,
           "playbackSpeed": 1.0
@@ -200,7 +200,7 @@
       "status": "coming soon",
       "chapterCount": 3,
       "featured": true,
-      "sortOrder": 2,
+      "sortOrder": 5,
       "chapters": [
         {
           "id": "chapter-1",
@@ -210,7 +210,7 @@
           "runtime": "07:48",
           "thumbnail": "assets/thumbnails/two-thousand-miles-below/ch01.jpg",
           "video": "assets/video/two-thousand-miles-below/ch01.mp4",
-          "posterFrame": "assets/thumbnails/two-thousand-miles-below/ch01.jpg",
+          "posterFrame": "assets/posters/two-thousand-miles-below/ch01.jpg",
           "airLabel": "Episode 1",
           "isPublished": true,
           "playbackSpeed": 1.0
@@ -223,7 +223,7 @@
           "runtime": "08:36",
           "thumbnail": "assets/thumbnails/two-thousand-miles-below/ch02.jpg",
           "video": "assets/video/two-thousand-miles-below/ch02.mp4",
-          "posterFrame": "assets/thumbnails/two-thousand-miles-below/ch02.jpg",
+          "posterFrame": "assets/posters/two-thousand-miles-below/ch02.jpg",
           "airLabel": "Episode 2",
           "isPublished": true,
           "playbackSpeed": 1.0
@@ -236,7 +236,7 @@
           "runtime": "09:05",
           "thumbnail": "assets/thumbnails/two-thousand-miles-below/ch03.jpg",
           "video": "assets/video/two-thousand-miles-below/ch03.mp4",
-          "posterFrame": "assets/thumbnails/two-thousand-miles-below/ch03.jpg",
+          "posterFrame": "assets/posters/two-thousand-miles-below/ch03.jpg",
           "airLabel": "Episode 3",
           "isPublished": true,
           "playbackSpeed": 1.0
@@ -261,7 +261,7 @@
       "status": "coming soon",
       "chapterCount": 3,
       "featured": false,
-      "sortOrder": 3,
+      "sortOrder": 4,
       "chapters": [
         {
           "id": "chapter-1",
@@ -271,7 +271,7 @@
           "runtime": "08:14",
           "thumbnail": "assets/thumbnails/first-on-the-moon/ch01.jpg",
           "video": "assets/video/first-on-the-moon/ch01.mp4",
-          "posterFrame": "assets/thumbnails/first-on-the-moon/ch01.jpg",
+          "posterFrame": "assets/posters/first-on-the-moon/ch01.jpg",
           "airLabel": "Episode 1",
           "isPublished": true,
           "playbackSpeed": 1.0
@@ -284,7 +284,7 @@
           "runtime": "09:02",
           "thumbnail": "assets/thumbnails/first-on-the-moon/ch02.jpg",
           "video": "assets/video/first-on-the-moon/ch02.mp4",
-          "posterFrame": "assets/thumbnails/first-on-the-moon/ch02.jpg",
+          "posterFrame": "assets/posters/first-on-the-moon/ch02.jpg",
           "airLabel": "Episode 2",
           "isPublished": true,
           "playbackSpeed": 1.0
@@ -297,7 +297,7 @@
           "runtime": "10:11",
           "thumbnail": "assets/thumbnails/first-on-the-moon/ch03.jpg",
           "video": "assets/video/first-on-the-moon/ch03.mp4",
-          "posterFrame": "assets/thumbnails/first-on-the-moon/ch03.jpg",
+          "posterFrame": "assets/posters/first-on-the-moon/ch03.jpg",
           "airLabel": "Episode 3",
           "isPublished": true,
           "playbackSpeed": 1.0
@@ -322,7 +322,7 @@
       "status": "complete",
       "chapterCount": 6,
       "featured": true,
-      "sortOrder": 4,
+      "sortOrder": 1,
       "chapters": [
         {
           "id": "chapter-1",
@@ -332,7 +332,7 @@
           "runtime": "04:53",
           "thumbnail": "assets/thumbnails/futility/ch01.jpg",
           "video": "https://atomicflix.sfo3.cdn.digitaloceanspaces.com/city/Futility%20Chapter%201.mp4",
-          "posterFrame": "assets/thumbnails/futility/ch01.jpg",
+          "posterFrame": "assets/posters/futility/ch01.jpg",
           "airLabel": "Episode 1",
           "isPublished": true,
           "playbackSpeed": 1.0
@@ -345,7 +345,7 @@
           "runtime": "00:00",
           "thumbnail": "assets/thumbnails/futility/ch02.jpg",
           "video": "https://atomicflix.sfo3.cdn.digitaloceanspaces.com/city/Futility%20Episode%202.mp4",
-          "posterFrame": "assets/thumbnails/futility/ch02.jpg",
+          "posterFrame": "assets/posters/futility/ch02.jpg",
           "airLabel": "Episode 2",
           "isPublished": true,
           "playbackSpeed": 1.0
@@ -358,7 +358,7 @@
           "runtime": "00:00",
           "thumbnail": "assets/thumbnails/futility/ch03.jpg",
           "video": "https://atomicflix.sfo3.cdn.digitaloceanspaces.com/city/Futility%20Episode%203.mp4",
-          "posterFrame": "assets/thumbnails/futility/ch03.jpg",
+          "posterFrame": "assets/posters/futility/ch03.jpg",
           "airLabel": "Episode 3",
           "isPublished": true,
           "playbackSpeed": 1.0
@@ -371,7 +371,7 @@
           "runtime": "00:00",
           "thumbnail": "assets/thumbnails/futility/ch04.jpg",
           "video": "https://atomicflix.sfo3.cdn.digitaloceanspaces.com/city/Futility%20Episode%204.mp4",
-          "posterFrame": "assets/thumbnails/futility/ch04.jpg",
+          "posterFrame": "assets/posters/futility/ch04.jpg",
           "airLabel": "Episode 4",
           "isPublished": true,
           "playbackSpeed": 1.0
@@ -384,7 +384,7 @@
           "runtime": "00:00",
           "thumbnail": "assets/thumbnails/futility/ch05.jpg",
           "video": "https://atomicflix.sfo3.cdn.digitaloceanspaces.com/city/Futility%20Episode%205.mp4",
-          "posterFrame": "assets/thumbnails/futility/ch05.jpg",
+          "posterFrame": "assets/posters/futility/ch05.jpg",
           "airLabel": "Episode 5",
           "isPublished": true,
           "playbackSpeed": 1.0
@@ -403,14 +403,15 @@
       "tags": [
         "Anthology",
         "Mystery",
+        "Horror",
         "Retro Sci-Fi",
         "Supernatural"
       ],
       "genre": "Anthology / Mystery",
-      "status": "ongoing",
-      "chapterCount": 8,
+      "status": "complete",
+      "chapterCount": 9,
       "featured": true,
-      "sortOrder": 5,
+      "sortOrder": 2,
       "chapters": [
         {
           "id": "chapter-1",
@@ -420,7 +421,7 @@
           "runtime": "05:13",
           "thumbnail": "assets/thumbnails/atomic-zone/ch1.jpg",
           "video": "https://atomicflix.sfo3.cdn.digitaloceanspaces.com/atomic_zone/Atomic%20Zone%20Episode%201.mp4",
-          "posterFrame": "assets/thumbnails/atomic-zone/ch1.jpg",
+          "posterFrame": "assets/posters/atomic-zone/ch1.jpg",
           "airLabel": "Episode 1",
           "isPublished": true,
           "playbackSpeed": 1.0
@@ -433,7 +434,7 @@
           "runtime": "07:43",
           "thumbnail": "assets/thumbnails/atomic-zone/ch2.jpg",
           "video": "https://atomicflix.sfo3.cdn.digitaloceanspaces.com/atomic_zone/Atomic%20Zone%20Episode%202.mp4",
-          "posterFrame": "assets/thumbnails/atomic-zone/ch2.jpg",
+          "posterFrame": "assets/posters/atomic-zone/ch2.jpg",
           "airLabel": "Episode 2",
           "isPublished": true,
           "playbackSpeed": 1.0
@@ -446,7 +447,7 @@
           "runtime": "11:04",
           "thumbnail": "assets/thumbnails/atomic-zone/ch3.jpg",
           "video": "https://atomicflix.sfo3.cdn.digitaloceanspaces.com/atomic_zone/Atomic%20Zone%20Episode%203.mp4",
-          "posterFrame": "assets/thumbnails/atomic-zone/ch3.jpg",
+          "posterFrame": "assets/posters/atomic-zone/ch3.jpg",
           "airLabel": "Episode 3",
           "isPublished": true,
           "playbackSpeed": 1.0
@@ -459,7 +460,7 @@
           "runtime": "08:16",
           "thumbnail": "assets/thumbnails/atomic-zone/ch4.jpg",
           "video": "https://atomicflix.sfo3.cdn.digitaloceanspaces.com/atomic_zone/Atomic%20Zone%20Episode%204.mp4",
-          "posterFrame": "assets/thumbnails/atomic-zone/ch4.jpg",
+          "posterFrame": "assets/posters/atomic-zone/ch4.jpg",
           "airLabel": "Episode 4",
           "isPublished": true,
           "playbackSpeed": 1.0
@@ -472,7 +473,7 @@
           "runtime": "07:32",
           "thumbnail": "assets/thumbnails/atomic-zone/ch5.jpg",
           "video": "https://atomicflix.sfo3.cdn.digitaloceanspaces.com/atomic_zone/Atomic%20Zone%20Episode%205.mp4",
-          "posterFrame": "assets/thumbnails/atomic-zone/ch5.jpg",
+          "posterFrame": "assets/posters/atomic-zone/ch5.jpg",
           "airLabel": "Episode 5",
           "isPublished": true,
           "playbackSpeed": 1.0
@@ -485,7 +486,7 @@
           "runtime": "11:35",
           "thumbnail": "assets/thumbnails/atomic-zone/ch6.jpg",
           "video": "https://atomicflix.sfo3.cdn.digitaloceanspaces.com/atomic_zone/Atomic%20Zone%20Episode%206.mp4",
-          "posterFrame": "assets/thumbnails/atomic-zone/ch6.jpg",
+          "posterFrame": "assets/posters/atomic-zone/ch6.jpg",
           "airLabel": "Episode 6",
           "isPublished": true,
           "playbackSpeed": 1.0
@@ -498,7 +499,7 @@
           "runtime": "02:42",
           "thumbnail": "assets/thumbnails/atomic-zone/ch7.jpg",
           "video": "https://atomicflix.sfo3.cdn.digitaloceanspaces.com/atomic_zone/Atomic%20Zone%20Episode%207.mp4",
-          "posterFrame": "assets/thumbnails/atomic-zone/ch7.jpg",
+          "posterFrame": "assets/posters/atomic-zone/ch7.jpg",
           "airLabel": "Episode 7",
           "isPublished": true,
           "playbackSpeed": 1.0
@@ -511,7 +512,7 @@
           "runtime": "07:33",
           "thumbnail": "assets/thumbnails/atomic-zone/ch8.jpg",
           "video": "https://atomicflix.sfo3.cdn.digitaloceanspaces.com/atomic_zone/Atomic%20Zone%20Episode%208.mp4",
-          "posterFrame": "assets/thumbnails/atomic-zone/ch8.jpg",
+          "posterFrame": "assets/posters/atomic-zone/ch8.jpg",
           "airLabel": "Episode 8",
           "isPublished": true,
           "playbackSpeed": 1.0
@@ -524,7 +525,7 @@
           "runtime": "07:33",
           "thumbnail": "assets/thumbnails/atomic-zone/ch9.jpg",
           "video": "https://atomicflix.sfo3.cdn.digitaloceanspaces.com/atomic_zone/Atomic%20Zone%20Episode%209.mp4",
-          "posterFrame": "assets/thumbnails/atomic-zone/ch9.jpg",
+          "posterFrame": "assets/posters/atomic-zone/ch9.jpg",
           "airLabel": "Episode 9 - Season Finale",
           "isPublished": true,
           "playbackSpeed": 1.0
@@ -634,7 +635,7 @@
     {
       "platform": "X",
       "label": "X",
-      "url": "https://x.com/BlackrushWorld"
+      "url": "https://x.com/AtomicFLixCom"
     },
     {
       "platform": "Facebook",
@@ -689,12 +690,12 @@
       "Think of a book that inspired me when I was poor and suffering and riding the bus home from work.",
       "Download the latest source text from Project Gutenberg",
       "Summarize the chapters using ChatGPT",
+      "Alternatively, think of an original story for The Atomic Zone while I'm on my daily walk",
       "Edit the chapters using My 1997 Textpad",
       "Generate AI video and character designs using Flicki.com",
-      "Redfine the characters each time for some reason",
-      "Remove the background music layers because they are too loud",
       "Export the chapter to MP4",
       "Edit the chapters using VideoProc VLogger and increase the speed of the cuts",
+      "Correct slides, add narration, and add voice acting using Me LOL",
       "Export the chapters as MP4s and upload to Digital Ocean",
       "Create poster art and thumbnails using Windows Snipping Tool and the attached gen.py script",
       "Manually edit the JSON files to add the chapters to the site",
