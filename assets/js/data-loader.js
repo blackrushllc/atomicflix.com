@@ -37,7 +37,7 @@ export function getFeaturedItems() {
 }
 
 export function getAllSeries() {
-    return libraryData?.series || [];
+    return (libraryData?.series || []).slice().sort((a, b) => (a.sortOrder || 0) - (b.sortOrder || 0));
 }
 
 export function getSeriesById(id) {
@@ -86,7 +86,7 @@ export function getPreviousChapter(seriesId, currentNumber) {
 }
 
 export function getBlitzItems() {
-    return libraryData?.blitz || [];
+    return (libraryData?.blitz || []).slice().sort((a, b) => (a.sortOrder || 0) - (b.sortOrder || 0));
 }
 
 export function getBlitzById(id) {

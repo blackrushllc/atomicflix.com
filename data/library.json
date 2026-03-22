@@ -55,7 +55,8 @@
       "tags": [
         "Time Displacement",
         "Far Future",
-        "Cosmic Ruins"
+        "Cosmic Ruins",
+        "Season 1"
       ],
       "genre": "Science Fiction",
       "status": "complete",
@@ -316,7 +317,8 @@
       "tags": [
         "Maritime",
         "Historical Fiction",
-        "Prophetic"
+        "Prophetic",
+        "Full Book"
       ],
       "genre": "Nautical Drama",
       "status": "complete",
@@ -405,7 +407,8 @@
         "Mystery",
         "Horror",
         "Retro Sci-Fi",
-        "Supernatural"
+        "Supernatural",
+        "Season 1"
       ],
       "genre": "Anthology / Mystery",
       "status": "complete",
@@ -531,6 +534,67 @@
           "playbackSpeed": 1.0
         }
       ]
+    },
+    {
+      "id": "ninth-planet",
+      "title": "The Secret of the Ninth Planet",
+      "author": "Donald Allen Wollheim",
+      "sourceEra": "Pulp Adventure",
+      "description": " A team of scientists embarks on a mission in an experimental spaceship to find and disable alien machinery on the planets that are siphoning the sun's power, leading to a race against time to save humanity.",
+      "longDescription": "The Secret of the Ninth Planet is a 1959 science fiction novel by Donald A. Wollheim about a global crisis where the sun's energy is mysteriously dimming, threatening Earth with an ice age. A team of scientists, including high schooler Burl Denning, embarks on a mission in an experimental spaceship to find and disable alien machinery on the planets that are siphoning the sun's power, leading to a race against time to save humanity.",
+      "poster": "assets/posters/ninth-planet/cover.jpg",
+      "banner": "assets/banners/ninth-planet/cover.jpg",
+      "tags": [
+        "Underground World",
+        "Adventure",
+        "Pulp"
+      ],
+      "genre": "Science Fiction Adventure",
+      "status": "coming soon",
+      "chapterCount": 3,
+      "featured": true,
+      "sortOrder": 6,
+      "chapters": [
+        {
+          "id": "chapter-1",
+          "number": 1,
+          "title": "TBD",
+          "description": "",
+          "runtime": "00:00",
+          "thumbnail": "assets/thumbnails/ninth-planet/ch01.jpg",
+          "video": "TBD",
+          "posterFrame": "assets/posters/ninth-planet/ch01.jpg",
+          "airLabel": "Episode 1",
+          "isPublished": false,
+          "playbackSpeed": 1.0
+        },
+        {
+          "id": "chapter-2",
+          "number": 2,
+          "title": "TBD",
+          "description": "",
+          "runtime": "00:00",
+          "thumbnail": "assets/thumbnails/tninth-planet/ch02.jpg",
+          "video": "TBD",
+          "posterFrame": "assets/posters/ninth-planet/ch02.jpg",
+          "airLabel": "Episode 2",
+          "isPublished": false,
+          "playbackSpeed": 1.0
+        },
+        {
+          "id": "chapter-3",
+          "number": 3,
+          "title": "TBD",
+          "description": "",
+          "runtime": "00:00",
+          "thumbnail": "assets/thumbnails/ninth-planet/ch03.jpg",
+          "video": "TBD",
+          "posterFrame": "assets/posters/ninth-planet/ch03.jpg",
+          "airLabel": "Episode 3",
+          "isPublished": false,
+          "playbackSpeed": 1.0
+        }
+      ]
     }
   ],
   "blitz": [
@@ -630,17 +694,12 @@
     {
       "platform": "YouTube",
       "label": "YouTube",
-      "url": "https://www.youtube.com/channel/UCYTvdzgMbNSRvjMbk5PRJbw"
+      "url": "https://www.youtube.com/@atomicflixcom"
     },
     {
       "platform": "X",
       "label": "X",
       "url": "https://x.com/AtomicFLixCom"
-    },
-    {
-      "platform": "Facebook",
-      "label": "Facebook",
-      "url": "https://www.facebook.com/BlackrushBASIC"
     },
     {
       "platform": "Instagram",
@@ -651,6 +710,11 @@
       "platform": "TikTok",
       "label": "TikTok",
       "url": "https://www.tiktok.com/@blackrushworld"
+    },
+    {
+      "platform": "Rumble",
+      "label": "Rumble",
+      "url": "https://rumble.com/c/c-7874300?e9s=src_v1_clr"
     }
   ],
   "contributors": {
@@ -667,30 +731,29 @@
       "Restoration assistance"
     ],
     "techstack": [
-      "Inspiration - Audio books on Librivox",
+      "Inspiration - Audio books on Librivox, or just my imagination",
       "Book Sources - Project Gutenberg",
-      "Episode Summarization - ChatGPT",
+      "Book Episode Summarization & original scripts cleanup - ChatGPT",
       "Text Editing - My 1997 TextPad (License still valid!)",
       "AI Video Generation and character design - Flicki.com",
       "Video Editing - VideoProc VLogger",
-      "Poster Art and Thumbnails - Windows Snipping Tool, the attached gen.py script",
-      "Web Development - IntelliJ IDEA",
-      "Vibe Coding - Jetbrains Junie Ultimate",
+      "Poster Art and Thumbnails - BasilBASIC AI",
+      "Web Development IDE - IntelliJ IDEA",
+      "AI Coding Assistant - Jetbrains Junie Ultimate",
+      "Sound Design - Adobe Audition 1.0 (License still valid!)",
       "Backend - BasilBASIC",
       "Web and CDN/S3/RDS MySQL Hosting - Digital Ocean",
-      "Server",
-      "Ubuntu 24.04.3 LTS",
+      "Servers - Ubuntu 24.04.3 LTS",
       "Certificated SSL - Let's Encrypt (certbot)",
-      "Source Repo - github.com/blackrushllc/atomicflix.com",
+      "Open Source Repository - github.com/blackrushllc/atomicflix.com",
       "Voice Acting - Me LOL",
-      "Funding - Me LOL",
-      "Sound Design - Are you kidding?"
+      "Funding - Me LOL"
     ],
     "workflow": [
       "Think of a book that inspired me when I was poor and suffering and riding the bus home from work.",
       "Download the latest source text from Project Gutenberg",
-      "Summarize the chapters using ChatGPT",
       "Alternatively, think of an original story for The Atomic Zone while I'm on my daily walk",
+      "Summarize or correct grammar using ChatGPT",
       "Edit the chapters using My 1997 Textpad",
       "Generate AI video and character designs using Flicki.com",
       "Export the chapter to MP4",

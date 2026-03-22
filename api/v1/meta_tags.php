@@ -76,7 +76,7 @@ function generateMetaHtml($title, $description, $image, $type) {
     
     // Ensure image is absolute
     $absoluteImage = $image;
-    if ($image && !str_starts_with($image, 'http')) {
+    if ($image && strpos($image, 'http') !== 0) {
         // Strip leading slash if present
         $imagePath = ltrim($image, '/');
         $absoluteImage = "$protocol://$host/$imagePath";
@@ -87,7 +87,10 @@ function generateMetaHtml($title, $description, $image, $type) {
     $url_attr = htmlspecialchars($fullUrl);
     $img_attr = htmlspecialchars($absoluteImage);
 
-    $html = "\n    <!-- Open Graph / Facebook -->\n";
+    $html = "\n    <!-- Favicon -->\n";
+    $html .= "    <link rel=\"icon\" type=\"image/png\" href=\"favicon.png\">\n";
+
+    $html .= "\n    <!-- Open Graph / Facebook -->\n";
     $html .= "    <meta property=\"og:type\" content=\"$type\">\n";
     $html .= "    <meta property=\"og:url\" id=\"og-url\" content=\"$url_attr\">\n";
     $html .= "    <meta property=\"og:title\" id=\"og-title\" content=\"$title_attr\">\n";
